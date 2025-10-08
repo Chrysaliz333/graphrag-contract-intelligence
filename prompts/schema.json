@@ -1,0 +1,286 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Enhanced Contract Extraction Schema",
+  "description": "Comprehensive contract extraction schema supporting liability analysis, compliance tracking, and obligation management",
+  "type": "object",
+  "properties": {
+    "agreement": {
+      "type": "object",
+      "properties": {
+        "agreement_name": {"type": "string"},
+        "agreement_type": {"type": "string"},
+        "contract_id": {"type": "integer"},
+        "effective_date": {"type": "string", "format": "date"},
+        "expiration_date": {"type": "string", "format": "date"},
+        "agreement_date": {"type": "string", "format": "date"},
+        "renewal_term": {"type": "string"},
+        "notice_period_to_terminate_renewal": {"type": "string"},
+        "auto_renewal": {"type": "boolean"},
+        "total_contract_value": {
+          "type": "object",
+          "properties": {
+            "amount": {"type": "number"},
+            "currency": {"type": "string"}
+          }
+        },
+        "parties": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "role": {"type": "string"},
+              "name": {"type": "string"},
+              "incorporation_country": {"type": "string"},
+              "incorporation_state": {"type": "string"}
+            }
+          }
+        },
+        "governing_law": {
+          "type": "object",
+          "properties": {
+            "country": {"type": "string"},
+            "state": {"type": "string"},
+            "most_favored_country": {"type": "string"}
+          }
+        },
+        "dispute_resolution": {
+          "type": "object",
+          "properties": {
+            "method": {"type": "string", "enum": ["arbitration", "litigation", "mediation", "negotiation"]},
+            "venue": {"type": "string"},
+            "jurisdiction": {"type": "string"},
+            "governing_rules": {"type": "string"}
+          }
+        },
+        "liability_cap": {
+          "type": "object",
+          "properties": {
+            "exists": {"type": "boolean"},
+            "cap_amount": {"type": "number"},
+            "currency": {"type": "string"},
+            "cap_type": {"type": "string", "enum": ["per_incident", "aggregate", "annual", "unlimited"]},
+            "calculation_basis": {"type": "string"},
+            "applies_to_party": {"type": "string"},
+            "carve_outs": {
+              "type": "array",
+              "items": {"type": "string"},
+              "description": "Exceptions where cap doesn't apply (fraud, IP infringement, etc.)"
+            },
+            "excerpts": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "indemnification": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "indemnitor": {"type": "string"},
+              "indemnitee": {"type": "string"},
+              "scope": {"type": "string"},
+              "triggers": {"type": "array", "items": {"type": "string"}},
+              "limitations": {"type": "array", "items": {"type": "string"}},
+              "excerpts": {"type": "array", "items": {"type": "string"}}
+            }
+          }
+        },
+        "obligations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "obligation_type": {"type": "string"},
+              "obligated_party": {"type": "string"},
+              "description": {"type": "string"},
+              "deadline": {"type": "string"},
+              "deliverables": {"type": "array", "items": {"type": "string"}},
+              "performance_standards": {"type": "string"},
+              "consequences_of_breach": {"type": "string"},
+              "excerpts": {"type": "array", "items": {"type": "string"}}
+            }
+          }
+        },
+        "payment_terms": {
+          "type": "object",
+          "properties": {
+            "payment_schedule": {"type": "string"},
+            "payment_method": {"type": "string"},
+            "currency": {"type": "string"},
+            "late_payment_penalty": {"type": "string"},
+            "pricing_model": {"type": "string"},
+            "price_increases": {"type": "string"},
+            "excerpts": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "intellectual_property": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "ip_type": {"type": "string", "enum": ["ownership", "license", "joint_ownership", "assignment"]},
+              "owner": {"type": "string"},
+              "subject_matter": {"type": "string"},
+              "license_details": {
+                "type": "object",
+                "properties": {
+                  "license_type": {"type": "string", "enum": ["exclusive", "non_exclusive", "sole"]},
+                  "scope": {"type": "string"},
+                  "territory": {"type": "string"},
+                  "duration": {"type": "string"},
+                  "sublicensable": {"type": "boolean"},
+                  "transferable": {"type": "boolean"},
+                  "perpetual": {"type": "boolean"},
+                  "irrevocable": {"type": "boolean"}
+                }
+              },
+              "excerpts": {"type": "array", "items": {"type": "string"}}
+            }
+          }
+        },
+        "confidentiality": {
+          "type": "object",
+          "properties": {
+            "exists": {"type": "boolean"},
+            "duration": {"type": "string"},
+            "surviving_termination": {"type": "boolean"},
+            "exceptions": {"type": "array", "items": {"type": "string"}},
+            "return_obligations": {"type": "boolean"},
+            "excerpts": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "data_protection": {
+          "type": "object",
+          "properties": {
+            "gdpr_compliant": {"type": "boolean"},
+            "data_processing_agreement": {"type": "boolean"},
+            "data_subject_rights": {"type": "array", "items": {"type": "string"}},
+            "breach_notification_period": {"type": "string"},
+            "data_location_restrictions": {"type": "array", "items": {"type": "string"}},
+            "subprocessor_consent_required": {"type": "boolean"},
+            "excerpts": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "compliance_frameworks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "framework_name": {"type": "string"},
+              "certification_required": {"type": "boolean"},
+              "audit_rights": {"type": "boolean"},
+              "audit_frequency": {"type": "string"},
+              "specific_requirements": {"type": "array", "items": {"type": "string"}},
+              "excerpts": {"type": "array", "items": {"type": "string"}}
+            }
+          }
+        },
+        "warranties": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "warranty_type": {"type": "string"},
+              "warrantor": {"type": "string"},
+              "warranty_statement": {"type": "string"},
+              "duration": {"type": "string"},
+              "remedies": {"type": "array", "items": {"type": "string"}},
+              "disclaimers": {"type": "array", "items": {"type": "string"}},
+              "excerpts": {"type": "array", "items": {"type": "string"}}
+            }
+          }
+        },
+        "termination": {
+          "type": "object",
+          "properties": {
+            "termination_for_convenience": {
+              "type": "object",
+              "properties": {
+                "allowed": {"type": "boolean"},
+                "notice_period": {"type": "string"},
+                "termination_fee": {"type": "string"},
+                "allowed_parties": {"type": "array", "items": {"type": "string"}}
+              }
+            },
+            "termination_for_cause": {
+              "type": "object",
+              "properties": {
+                "breach_types": {"type": "array", "items": {"type": "string"}},
+                "cure_period": {"type": "string"},
+                "notice_required": {"type": "boolean"}
+              }
+            },
+            "post_termination_obligations": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "obligation": {"type": "string"},
+                  "responsible_party": {"type": "string"},
+                  "duration": {"type": "string"}
+                }
+              }
+            },
+            "surviving_clauses": {"type": "array", "items": {"type": "string"}},
+            "excerpts": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "insurance": {
+          "type": "object",
+          "properties": {
+            "required": {"type": "boolean"},
+            "types": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "insurance_type": {"type": "string"},
+                  "minimum_coverage": {"type": "number"},
+                  "currency": {"type": "string"},
+                  "additional_insured_required": {"type": "boolean"}
+                }
+              }
+            },
+            "proof_required": {"type": "boolean"},
+            "excerpts": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "restrictions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "restriction_type": {"type": "string"},
+              "restricted_party": {"type": "string"},
+              "description": {"type": "string"},
+              "duration": {"type": "string"},
+              "geographic_scope": {"type": "string"},
+              "exceptions": {"type": "array", "items": {"type": "string"}},
+              "excerpts": {"type": "array", "items": {"type": "string"}}
+            }
+          }
+        },
+        "change_of_control": {
+          "type": "object",
+          "properties": {
+            "triggers_termination": {"type": "boolean"},
+            "requires_consent": {"type": "boolean"},
+            "notification_required": {"type": "boolean"},
+            "affected_party": {"type": "string"},
+            "excerpts": {"type": "array", "items": {"type": "string"}}
+          }
+        },
+        "force_majeure": {
+          "type": "object",
+          "properties": {
+            "exists": {"type": "boolean"},
+            "covered_events": {"type": "array", "items": {"type": "string"}},
+            "notice_period": {"type": "string"},
+            "suspension_of_obligations": {"type": "boolean"},
+            "termination_allowed": {"type": "boolean"},
+            "termination_trigger_period": {"type": "string"},
+            "excerpts": {"type": "array", "items": {"type": "string"}}
+          }
+        }
+      }
+    }
+  }
+}

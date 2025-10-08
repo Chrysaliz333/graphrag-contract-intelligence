@@ -1,0 +1,31 @@
+@prefix sh:  <http://www.w3.org/ns/shacl#> .
+@prefix cp:  <https://example.com/contract#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cp:IndemnificationClauseShape a sh:NodeShape ;
+  sh:targetClass cp:Clause ;
+  sh:property [ sh:path cp:clauseId ; sh:in (11) ] ;
+  sh:property [ sh:path cp:title ; sh:minCount 1 ] ;
+  sh:property [ sh:path cp:rightHolder ; sh:minCount 1 ] ;
+  sh:property [ sh:path cp:obligor ; sh:minCount 1 ] .
+
+cp:IndemnificationVariableShape a sh:NodeShape ;
+  sh:targetClass cp:Variable ;
+  sh:or (
+    [ sh:property [ sh:path cp:name ; sh:hasValue "indemnitor" ] ;
+      sh:property [ sh:path cp:value ; sh:in ("Vendor" "Customer" "EachParty" "Counterparty") ] ]
+    [ sh:property [ sh:path cp:name ; sh:hasValue "indemnitee" ] ;
+      sh:property [ sh:path cp:value ; sh:in ("Vendor" "Customer" "EachParty" "Affiliates" "Directors" "Officers" "Employees" "Agents" "Subcontractors" "Successors" "Assigns" "Customers" "EndUsers" "ParticipatingEntities") ] ]
+    [ sh:property [ sh:path cp:name ; sh:hasValue "duty_to_defend" ] ;
+      sh:property [ sh:path cp:value ; sh:datatype xsd:boolean ] ]
+    [ sh:property [ sh:path cp:name ; sh:hasValue "triggers" ] ;
+      sh:property [ sh:path cp:value ; sh:in ("services" "breach" "negligence_or_willful_misconduct" "ip_infringement" "violation_of_law" "confidentiality_breach" "data_breach") ] ]
+    [ sh:property [ sh:path cp:name ; sh:hasValue "exclusions" ] ;
+      sh:property [ sh:path cp:value ; sh:in ("beneficiary_gross_negligence" "beneficiary_willful_misconduct" "beneficiary_breach" "indirect_damages") ] ]
+    [ sh:property [ sh:path cp:name ; sh:hasValue "control_of_defense" ] ;
+      sh:property [ sh:path cp:value ; sh:in ("Indemnitor" "Indemnitee" "Mutual" "NotSpecified") ] ]
+    [ sh:property [ sh:path cp:name ; sh:hasValue "costs_borne_by" ] ;
+      sh:property [ sh:path cp:value ; sh:in ("Indemnitor" "Shared" "NotSpecified") ] ]
+    [ sh:property [ sh:path cp:name ; sh:hasValue "notice_period_bd" ] ;
+      sh:property [ sh:path cp:value ; sh:datatype xsd:integer ] ]
+  ) .

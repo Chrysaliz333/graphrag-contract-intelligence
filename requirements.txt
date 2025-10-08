@@ -1,0 +1,9 @@
+neo4j-rust-ext==5.25.0.0
+neo4j-graphrag==1.0.0
+semantic-kernel>=1.14.0
+streamlit>=1.39.0
+openai>=1.51.2
+langchain>=0.1.0
+langchain-openai>=0.0.5
+python-dotenv>=1.0.0
+pypdf>=4.2.0

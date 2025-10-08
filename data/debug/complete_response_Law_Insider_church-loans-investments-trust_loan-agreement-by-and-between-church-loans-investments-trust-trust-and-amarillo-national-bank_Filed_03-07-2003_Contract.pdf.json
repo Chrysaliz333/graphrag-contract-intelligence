@@ -1,0 +1,181 @@
+{
+  "agreement": {
+    "agreement_name": "LOAN AGREEMENT",
+    "agreement_type": "Loan Agreement",
+    "agreement_date": "2002-12-31",
+    "effective_date": "2002-12-31",
+    "expiration_date": null,
+    "renewal_term": "1 year",
+    "notice_period_to_terminate_renewal": "6 months",
+    "auto_renewal": true,
+    "total_contract_value": {
+      "amount": 20000000,
+      "currency": "USD"
+    },
+    "parties": [
+      {
+        "role": "Trust",
+        "name": "CHURCH LOANS & INVESTMENTS TRUST",
+        "incorporation_country": "United States",
+        "incorporation_state": "Texas"
+      },
+      {
+        "role": "Bank",
+        "name": "AMARILLO NATIONAL BANK",
+        "incorporation_country": "United States",
+        "incorporation_state": "Texas"
+      }
+    ],
+    "governing_law": {
+      "country": "United States",
+      "state": "Texas",
+      "most_favored_country": null
+    },
+    "dispute_resolution": {
+      "method": null,
+      "venue": null,
+      "jurisdiction": null,
+      "governing_rules": null
+    }
+  },
+  "clauses": [
+    {
+      "clause_id": 0,
+      "title": "Limitation of Liability",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [],
+      "provenance": {
+        "source_document_id": "Loan Agreement",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 6,
+      "title": "Confidentiality",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [],
+      "provenance": {
+        "source_document_id": "Loan Agreement",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 7,
+      "title": "Data Breach Notification",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [],
+      "provenance": {
+        "source_document_id": "Loan Agreement",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 8,
+      "title": "Data Protection Compliance",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [],
+      "provenance": {
+        "source_document_id": "Loan Agreement",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 9,
+      "title": "Technical & Organisational Measures",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [],
+      "provenance": {
+        "source_document_id": "Loan Agreement",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 10,
+      "title": "Marketing & Promotion",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [],
+      "provenance": {
+        "source_document_id": "Loan Agreement",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    }
+  ]
+}

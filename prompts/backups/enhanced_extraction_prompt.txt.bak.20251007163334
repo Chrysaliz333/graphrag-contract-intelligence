@@ -1,0 +1,413 @@
+Generate a valid JSON document that extracts comprehensive, structured information from this contract.
+
+CRITICAL INSTRUCTIONS:
+- Use ONLY information from this specific contract
+- Extract complete excerpts (full paragraphs, not snippets)
+- For numerical values, provide the actual number (not "specified" or "mentioned")
+- If information is not found, use null or empty array [] as appropriate
+- Ensure the JSON is valid and properly formatted
+- Do not include anything except the JSON document in your response
+
+EXTRACTION REQUIREMENTS:
+
+=== SECTION 1: BASIC AGREEMENT INFORMATION ===
+
+1. Agreement Identification
+   - What is the full name of this agreement?
+   - What type of contract is this? (e.g., Master Service Agreement, License Agreement, Supply Agreement)
+   - What is the agreement/signature date? (format: YYYY-MM-DD)
+   - What is the effective date? (format: YYYY-MM-DD)
+   - What is the expiration date? (format: YYYY-MM-DD)
+   - What is the renewal term?
+   - What is the notice period to terminate renewal?
+   - Does the agreement auto-renew? (true/false)
+   - What is the total contract value, if specified? (amount and currency)
+
+2. Parties
+   For each party to the agreement:
+   - What is their role? (e.g., Vendor, Buyer, Licensor, Licensee, Service Provider, Customer)
+   - What is their legal name?
+   - In which country are they incorporated? (use ISO 3166 country name)
+   - In which state/province are they incorporated?
+
+3. Governing Law and Dispute Resolution
+   - Which country's law governs this agreement?
+   - Which state's law governs this agreement?
+   - If multiple countries mentioned, which is most favored?
+   - What is the dispute resolution method? (arbitration, litigation, mediation, negotiation)
+   - What is the venue for disputes?
+   - What jurisdiction applies?
+   - What rules govern dispute resolution? (e.g., AAA, JAMS, ICC)
+
+=== SECTION 2: LIABILITY AND INDEMNIFICATION ===
+
+4. Limitation of Liability
+   - Does the contract contain a liability cap? (true/false)
+   - If yes:
+     * What is the cap amount? (numeric value)
+     * What currency?
+     * What type of cap? (per_incident, aggregate, annual, unlimited)
+     * How is the cap calculated? (e.g., "12 months of fees paid", "fixed amount")
+     * Which party does the cap apply to?
+     * What are the carve-outs/exceptions? (list situations where cap doesn't apply, e.g., fraud, IP infringement, gross negligence, data breach, death/bodily injury)
+     * Provide FULL excerpts from the liability limitation section
+
+5. Indemnification
+   For each indemnification obligation:
+   - Who is the indemnitor (party providing indemnification)?
+   - Who is the indemnitee (party receiving indemnification)?
+   - What is the scope of indemnification?
+   - What triggers the indemnification obligation? (list all triggers)
+   - What limitations apply to indemnification?
+   - Provide FULL excerpts
+
+=== SECTION 3: OBLIGATIONS AND DELIVERABLES ===
+
+6. Performance Obligations
+   For each major obligation in the contract:
+   - What type of obligation? (delivery, service, payment, reporting, maintenance, etc.)
+   - Which party is obligated?
+   - Describe the obligation in detail
+   - What is the deadline or timeline?
+   - What are the specific deliverables?
+   - What performance standards or SLAs apply?
+   - What are the consequences of breach/non-performance?
+   - Provide FULL excerpts
+
+=== SECTION 4: PAYMENT AND FINANCIAL TERMS ===
+
+7. Payment Terms
+   - What is the payment schedule? (e.g., monthly, quarterly, upon delivery, milestone-based)
+   - What payment methods are accepted?
+   - What currency?
+   - What are the late payment penalties?
+   - What is the pricing model? (fixed fee, time and materials, subscription, usage-based, etc.)
+   - How are price increases handled?
+   - Provide FULL excerpts
+
+=== SECTION 5: INTELLECTUAL PROPERTY ===
+
+8. IP Ownership and Licensing
+   For each IP provision:
+   - What type? (ownership, license, joint_ownership, assignment)
+   - Who owns or licenses the IP?
+   - What is the subject matter?
+   - If a license:
+     * What type? (exclusive, non_exclusive, sole)
+     * What is the scope?
+     * What territory does it cover?
+     * What is the duration?
+     * Is it sublicensable? (true/false)
+     * Is it transferable? (true/false)
+     * Is it perpetual? (true/false)
+     * Is it irrevocable? (true/false)
+   - Provide FULL excerpts
+
+=== SECTION 6: CONFIDENTIALITY AND DATA PROTECTION ===
+
+9. Confidentiality
+   - Does the contract contain confidentiality obligations? (true/false)
+   - What is the duration of confidentiality obligations?
+   - Do they survive termination? (true/false)
+   - What are the exceptions to confidentiality? (list all)
+   - Are there return/destruction obligations? (true/false)
+   - Provide FULL excerpts
+
+10. Data Protection and Privacy
+    - Is the contract GDPR compliant? (true/false)
+    - Is there a data processing agreement? (true/false)
+    - What data subject rights are mentioned? (list all)
+    - What is the breach notification period?
+    - Are there data location/storage restrictions? (list all)
+    - Is consent required for subprocessors? (true/false)
+    - Provide FULL excerpts
+
+=== SECTION 7: COMPLIANCE AND STANDARDS ===
+
+11. Compliance Frameworks
+    For each compliance framework mentioned (GDPR, SOC2, HIPAA, ISO27001, PCI-DSS, etc.):
+    - What is the framework name?
+    - Is certification required? (true/false)
+    - Are audit rights granted? (true/false)
+    - What is the audit frequency?
+    - What specific requirements are mentioned?
+    - Provide FULL excerpts
+
+=== SECTION 8: WARRANTIES ===
+
+12. Warranties
+    For each warranty:
+    - What type of warranty? (title, non-infringement, performance, fitness for purpose, etc.)
+    - Who provides the warranty?
+    - What is the warranty statement?
+    - What is the duration?
+    - What remedies are available for breach?
+    - What disclaimers apply? (e.g., "AS IS", no implied warranties)
+    - Provide FULL excerpts
+
+=== SECTION 9: TERMINATION ===
+
+13. Termination Rights
+    - Termination for Convenience:
+      * Is it allowed? (true/false)
+      * What is the notice period?
+      * Is there a termination fee?
+      * Which parties can terminate for convenience?
+
+    - Termination for Cause:
+      * What types of breaches allow termination?
+      * What is the cure period?
+      * Is notice required? (true/false)
+
+    - Post-Termination:
+      * What obligations survive termination? (list each with responsible party and duration)
+      * Which clauses explicitly survive termination?
+
+    - Provide FULL excerpts
+
+=== SECTION 10: INSURANCE ===
+
+14. Insurance Requirements
+    - Is insurance required? (true/false)
+    - For each type of insurance:
+      * What type? (general liability, professional liability, cyber liability, etc.)
+      * What is the minimum coverage amount?
+      * What currency?
+      * Must the other party be named as additional insured? (true/false)
+    - Is proof of insurance required? (true/false)
+    - Provide FULL excerpts
+
+=== SECTION 11: RESTRICTIONS AND COVENANTS ===
+
+15. Restrictive Covenants
+    For each restriction (non-compete, exclusivity, no-solicit, non-disparagement, etc.):
+    - What type of restriction?
+    - Which party is restricted?
+    - Describe the restriction in detail
+    - What is the duration?
+    - What is the geographic scope?
+    - What exceptions apply?
+    - Provide FULL excerpts
+
+=== SECTION 12: CHANGE OF CONTROL ===
+
+16. Change of Control Provisions
+    - Does change of control trigger termination rights? (true/false)
+    - Is consent required for change of control? (true/false)
+    - Is notification required? (true/false)
+    - Which party is affected by change of control provisions?
+    - Provide FULL excerpts
+
+=== SECTION 13: FORCE MAJEURE ===
+
+17. Force Majeure
+    - Does the contract contain force majeure provisions? (true/false)
+    - What events are covered? (list all: natural disasters, pandemics, war, strikes, etc.)
+    - What is the notice period?
+    - Are obligations suspended during force majeure? (true/false)
+    - Can the agreement be terminated due to force majeure? (true/false)
+    - After what period can termination occur?
+    - Provide FULL excerpts
+
+=== OUTPUT FORMAT ===
+
+Your response must be ONLY a valid JSON document matching this structure:
+
+{
+  "agreement": {
+    "agreement_name": "string",
+    "agreement_type": "string",
+    "effective_date": "YYYY-MM-DD",
+    "expiration_date": "YYYY-MM-DD or null",
+    "agreement_date": "YYYY-MM-DD",
+    "renewal_term": "string or null",
+    "notice_period_to_terminate_renewal": "string or null",
+    "auto_renewal": true/false,
+    "total_contract_value": {"amount": number, "currency": "string"} or null,
+    "parties": [
+      {
+        "role": "string",
+        "name": "string",
+        "incorporation_country": "string",
+        "incorporation_state": "string"
+      }
+    ],
+    "governing_law": {
+      "country": "string",
+      "state": "string",
+      "most_favored_country": "string"
+    },
+    "dispute_resolution": {
+      "method": "arbitration|litigation|mediation|negotiation",
+      "venue": "string",
+      "jurisdiction": "string",
+      "governing_rules": "string"
+    },
+    "liability_cap": {
+      "exists": true/false,
+      "cap_amount": number or null,
+      "currency": "string" or null,
+      "cap_type": "per_incident|aggregate|annual|unlimited",
+      "calculation_basis": "string",
+      "applies_to_party": "string",
+      "carve_outs": ["string"],
+      "excerpts": ["full verbatim text from contract"]
+    },
+    "indemnification": [
+      {
+        "indemnitor": "string",
+        "indemnitee": "string",
+        "scope": "string",
+        "triggers": ["string"],
+        "limitations": ["string"],
+        "excerpts": ["full verbatim text"]
+      }
+    ],
+    "obligations": [
+      {
+        "obligation_type": "string",
+        "obligated_party": "string",
+        "description": "string",
+        "deadline": "string",
+        "deliverables": ["string"],
+        "performance_standards": "string",
+        "consequences_of_breach": "string",
+        "excerpts": ["full verbatim text"]
+      }
+    ],
+    "payment_terms": {
+      "payment_schedule": "string",
+      "payment_method": "string",
+      "currency": "string",
+      "late_payment_penalty": "string",
+      "pricing_model": "string",
+      "price_increases": "string",
+      "excerpts": ["full verbatim text"]
+    },
+    "intellectual_property": [
+      {
+        "ip_type": "ownership|license|joint_ownership|assignment",
+        "owner": "string",
+        "subject_matter": "string",
+        "license_details": {
+          "license_type": "exclusive|non_exclusive|sole",
+          "scope": "string",
+          "territory": "string",
+          "duration": "string",
+          "sublicensable": true/false,
+          "transferable": true/false,
+          "perpetual": true/false,
+          "irrevocable": true/false
+        } or null,
+        "excerpts": ["full verbatim text"]
+      }
+    ],
+    "confidentiality": {
+      "exists": true/false,
+      "duration": "string",
+      "surviving_termination": true/false,
+      "exceptions": ["string"],
+      "return_obligations": true/false,
+      "excerpts": ["full verbatim text"]
+    },
+    "data_protection": {
+      "gdpr_compliant": true/false,
+      "data_processing_agreement": true/false,
+      "data_subject_rights": ["string"],
+      "breach_notification_period": "string",
+      "data_location_restrictions": ["string"],
+      "subprocessor_consent_required": true/false,
+      "excerpts": ["full verbatim text"]
+    },
+    "compliance_frameworks": [
+      {
+        "framework_name": "string",
+        "certification_required": true/false,
+        "audit_rights": true/false,
+        "audit_frequency": "string",
+        "specific_requirements": ["string"],
+        "excerpts": ["full verbatim text"]
+      }
+    ],
+    "warranties": [
+      {
+        "warranty_type": "string",
+        "warrantor": "string",
+        "warranty_statement": "string",
+        "duration": "string",
+        "remedies": ["string"],
+        "disclaimers": ["string"],
+        "excerpts": ["full verbatim text"]
+      }
+    ],
+    "termination": {
+      "termination_for_convenience": {
+        "allowed": true/false,
+        "notice_period": "string",
+        "termination_fee": "string",
+        "allowed_parties": ["string"]
+      },
+      "termination_for_cause": {
+        "breach_types": ["string"],
+        "cure_period": "string",
+        "notice_required": true/false
+      },
+      "post_termination_obligations": [
+        {
+          "obligation": "string",
+          "responsible_party": "string",
+          "duration": "string"
+        }
+      ],
+      "surviving_clauses": ["string"],
+      "excerpts": ["full verbatim text"]
+    },
+    "insurance": {
+      "required": true/false,
+      "types": [
+        {
+          "insurance_type": "string",
+          "minimum_coverage": number,
+          "currency": "string",
+          "additional_insured_required": true/false
+        }
+      ],
+      "proof_required": true/false,
+      "excerpts": ["full verbatim text"]
+    },
+    "restrictions": [
+      {
+        "restriction_type": "string",
+        "restricted_party": "string",
+        "description": "string",
+        "duration": "string",
+        "geographic_scope": "string",
+        "exceptions": ["string"],
+        "excerpts": ["full verbatim text"]
+      }
+    ],
+    "change_of_control": {
+      "triggers_termination": true/false,
+      "requires_consent": true/false,
+      "notification_required": true/false,
+      "affected_party": "string",
+      "excerpts": ["full verbatim text"]
+    },
+    "force_majeure": {
+      "exists": true/false,
+      "covered_events": ["string"],
+      "notice_period": "string",
+      "suspension_of_obligations": true/false,
+      "termination_allowed": true/false,
+      "termination_trigger_period": "string",
+      "excerpts": ["full verbatim text"]
+    }
+  }
+}
+
+IMPORTANT REMINDERS:
+- Extract COMPLETE excerpts (full paragraphs with all context)
+- Use actual numbers, not placeholders
+- Use null for missing data, not empty strings
+- Ensure valid JSON formatting
+- Do not include any text before or after the JSON

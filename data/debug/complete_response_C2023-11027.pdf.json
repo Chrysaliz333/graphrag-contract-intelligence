@@ -1,0 +1,181 @@
+{
+  "agreement": {
+    "agreement_name": "Master Services Agreement",
+    "agreement_type": "Master Service Agreement",
+    "agreement_date": "2023-04-18",
+    "effective_date": "2023-04-18",
+    "expiration_date": "2024-08-31",
+    "renewal_term": "up to two additional two-year terms",
+    "notice_period_to_terminate_renewal": "30 days",
+    "auto_renewal": false,
+    "total_contract_value": null,
+    "parties": [
+      {
+        "role": "Buyer",
+        "name": "The Texas A&M University System",
+        "incorporation_country": "United States",
+        "incorporation_state": "Texas"
+      },
+      {
+        "role": "Vendor",
+        "name": "TXC Texas Creative, LLC",
+        "incorporation_country": "United States",
+        "incorporation_state": "Texas"
+      }
+    ],
+    "governing_law": {
+      "country": "United States",
+      "state": "Texas",
+      "most_favored_country": null
+    },
+    "dispute_resolution": {
+      "method": "negotiation",
+      "venue": "Brazos County, Texas",
+      "jurisdiction": "Texas",
+      "governing_rules": "Chapter 2260, Texas Government Code"
+    }
+  },
+  "clauses": [
+    {
+      "clause_id": 4,
+      "title": "Default and Termination",
+      "right_holder": "A&M System",
+      "obligor": "PROVIDER",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "A. Default of Respondent – A&M System shall have the right to terminate this Agreement without penalty after a 15-day written notice of termination in the event: a. PROVIDER disregards or violates material provisions of this Agreement or A&M System instructions; or fails to execute the work of a specific engagement according to the agreed upon schedule of completion and/or time of completion specified, including extensions thereof, or fails to reach agreed upon performance results. b. PROVIDER declares bankruptcy, becomes insolvent, or assigns company assets for the benefit of creditors.",
+        "B. For Convenience – A&M System shall have the right to terminate this Agreement at any time upon thirty (30) days prior notice to PROVIDER."
+      ],
+      "provenance": {
+        "source_document_id": "contract_1",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 6,
+      "title": "Confidentiality",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [],
+      "provenance": {
+        "source_document_id": "contract_1",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 7,
+      "title": "Data Breach Notification",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [],
+      "provenance": {
+        "source_document_id": "contract_1",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 8,
+      "title": "Data Protection Compliance",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [],
+      "provenance": {
+        "source_document_id": "contract_1",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 9,
+      "title": "Technical & Organisational Measures",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [],
+      "provenance": {
+        "source_document_id": "contract_1",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 10,
+      "title": "Marketing & Promotion",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [],
+      "provenance": {
+        "source_document_id": "contract_1",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    }
+  ]
+}

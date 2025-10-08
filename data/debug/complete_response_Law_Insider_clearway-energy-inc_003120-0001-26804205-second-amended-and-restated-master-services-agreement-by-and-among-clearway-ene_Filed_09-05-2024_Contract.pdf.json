@@ -1,0 +1,196 @@
+{
+  "agreement": {
+    "agreement_name": "SECOND AMENDED AND RESTATED MASTER SERVICES AGREEMENT",
+    "agreement_type": "Master Services Agreement",
+    "agreement_date": "2024-04-30",
+    "effective_date": "2025-01-01",
+    "expiration_date": null,
+    "renewal_term": null,
+    "notice_period_to_terminate_renewal": null,
+    "auto_renewal": false,
+    "total_contract_value": {
+      "amount": 22600000,
+      "currency": "USD"
+    },
+    "parties": [
+      {
+        "role": "Manager",
+        "name": "Clearway Energy Group LLC",
+        "incorporation_country": "United States",
+        "incorporation_state": "Delaware"
+      },
+      {
+        "role": "Buyer",
+        "name": "Clearway Energy, Inc.",
+        "incorporation_country": "United States",
+        "incorporation_state": "Delaware"
+      },
+      {
+        "role": "Buyer",
+        "name": "Clearway Energy LLC",
+        "incorporation_country": "United States",
+        "incorporation_state": "Delaware"
+      },
+      {
+        "role": "Buyer",
+        "name": "Clearway Energy Operating LLC",
+        "incorporation_country": "United States",
+        "incorporation_state": "Delaware"
+      }
+    ],
+    "governing_law": {
+      "country": "United States",
+      "state": "Delaware",
+      "most_favored_country": null
+    },
+    "dispute_resolution": {
+      "method": "arbitration",
+      "venue": "State of Delaware",
+      "jurisdiction": "Delaware Court of Chancery",
+      "governing_rules": "Commercial Arbitration Rules of the American Arbitration Association"
+    }
+  },
+  "clauses": [
+    {
+      "clause_id": 9,
+      "title": "Indemnity",
+      "right_holder": "Manager Indemnified Party",
+      "obligor": "CWEN, CE LLC and CE Op",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "CWEN, CE LLC and CE Op hereby jointly and severally agree, to the fullest extent permitted by applicable Laws, to indemnify and hold harmless, and to cause each other Service Recipient to indemnify and hold harmless, each member of the Manager Group, any of its Affiliates (other than any member of the YieldCo Group) and any directors, officers, agents, members, partners, stockholders and employees and other representatives of each of the foregoing (each, a “Manager Indemnified Party”) from and against any claims, liabilities, losses, damages (but expressly excluding any consequential damages that were not reasonably foreseeable and punitive damages, except to the extent awarded in a final judgment in respect of a Third Party Claim), costs or expenses (including legal fees) (“Liabilities”) incurred by them or threatened in connection with any and all actions, suits, investigations, proceedings or claims of any kind whatsoever, whether arising under statute or action of a Governmental Authority or otherwise or in connection with the business, investments and activities of the Service Recipients in respect of or arising from this Agreement or the Services provided hereunder (“Claims”), including any Claims arising on account of the Governmental Charges contemplated by Section 7.3; provided, that no Manager Indemnified Party shall be so indemnified with respect to any Claim to the extent that such Claim is finally determined by a final and non-appealable judgment entered by a court of competent jurisdiction, or pursuant to a settlement agreement agreed to by such Manager Indemnified Party, to have resulted from such Manager Indemnified Party’s bad faith, fraud, willful misconduct or gross negligence or, in the case of a criminal matter, conduct undertaken with knowledge that the conduct was unlawful."
+      ],
+      "provenance": {
+        "source_document_id": "003120-0001-26804205",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 9,
+      "title": "Limitation of Liability",
+      "right_holder": "Manager Indemnified Party",
+      "obligor": "Service Recipients",
+      "variables": [
+        {
+          "name": "liability_cap_amount",
+          "type": "int",
+          "value": 45320000,
+          "unit": "USD",
+          "evidence": "The maximum amount of the aggregate liability of the Manager Indemnified Parties pursuant to this Agreement will be equal to the amounts previously payable in respect of Services pursuant to this Agreement in the two most recent calendar years by the Service Recipients pursuant to Article 7.",
+          "confidence": 1.0
+        },
+        {
+          "name": "liability_cap_type",
+          "type": "enum",
+          "value": "aggregate",
+          "evidence": "The maximum amount of the aggregate liability of the Manager Indemnified Parties pursuant to this Agreement will be equal to the amounts previously payable in respect of Services pursuant to this Agreement in the two most recent calendar years by the Service Recipients pursuant to Article 7.",
+          "confidence": 1.0
+        }
+      ],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "The Service Recipients hereby agree that no Manager Indemnified Party will be liable to a Service Recipient, a Service Recipient’s Governing Body (including, for greater certainty, a director or officer of a Service Recipient or another individual with similar function or capacity) or any security holder or partner of a Service Recipient for any Liabilities that may occur as a result of any acts or omissions by any Manager Indemnified Party pursuant to or in accordance with this Agreement, except to the extent that such Liabilities are finally determined by a final and non-appealable judgment entered by a court of competent jurisdiction to have resulted from a Manager Indemnified Party’s bad faith, fraud, willful misconduct or gross negligence, or in the case of a criminal matter, conduct undertaken with knowledge that the conduct was unlawful."
+      ],
+      "provenance": {
+        "source_document_id": "003120-0001-26804205",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 10,
+      "title": "Term and Termination",
+      "right_holder": "Each Party",
+      "obligor": "CWEN, CE LLC and CE Op",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "This Agreement shall continue in full force and effect in perpetuity until terminated in accordance with Section 10.2, Section 10.3 or Section 12.1.1."
+      ],
+      "provenance": {
+        "source_document_id": "003120-0001-26804205",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 11,
+      "title": "Arbitration",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "Any Dispute shall be submitted to arbitration (the “Arbitration”) by three (3) Arbitrators pursuant to the procedure set forth in this Section 11.2 and pursuant to the then current Commercial Arbitration Rules (the “Rules”) of the American Arbitration Association (“AAA”)."
+      ],
+      "provenance": {
+        "source_document_id": "003120-0001-26804205",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 6,
+      "title": "Confidentiality",
+      "right_holder": "Each Party",
+      "obligor": "Manager",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "Manager agrees that the information the Manager Group has or obtains concerning the Service Recipients and their respective assets, business, operations or prospects (the “Confidential Information”) constitutes the confidential information of the respective Service Recipient, and that Manager shall not, and shall cause the other members of the Manager Group not to, without the prior written consent of CWEN, publicly disclose any Confidential Information."
+      ],
+      "provenance": {
+        "source_document_id": "003120-0001-26804205",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    }
+  ]
+}

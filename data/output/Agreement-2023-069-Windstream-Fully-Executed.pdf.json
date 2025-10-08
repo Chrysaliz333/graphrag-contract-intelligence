@@ -1,0 +1,136 @@
+{
+  "agreement": {
+    "agreement_name": "MASTER SERVICES AGREEMENT #2023-069",
+    "agreement_type": "Master Services Agreement",
+    "agreement_date": "2024-04-02",
+    "effective_date": "2024-04-02",
+    "expiration_date": "2029-01-30",
+    "renewal_term": "up to four (4) additional one (1) year terms",
+    "notice_period_to_terminate_renewal": "30 days",
+    "auto_renewal": true,
+    "total_contract_value": null,
+    "parties": [
+      {
+        "role": "Buyer",
+        "name": "North Central Texas Council of Governments",
+        "incorporation_country": null,
+        "incorporation_state": null
+      },
+      {
+        "role": "Vendor",
+        "name": "Windstream Services, LLC",
+        "incorporation_country": null,
+        "incorporation_state": null
+      }
+    ],
+    "governing_law": {
+      "country": "United States",
+      "state": "Texas",
+      "most_favored_country": null
+    },
+    "dispute_resolution": {
+      "method": "mediation",
+      "venue": "Tarrant County, Texas",
+      "jurisdiction": "Texas",
+      "governing_rules": null
+    }
+  },
+  "clauses": [
+    {
+      "clause_id": 4,
+      "title": "Limitation of Liability",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [
+        {
+          "name": "liability_cap",
+          "type": "bool",
+          "value": false,
+          "unit": "n/a",
+          "evidence": "In no event shall either party be liable for special, consequential, incidental, indirect or punitive loss, damages or expenses arising out of or relating to this Agreement, whether arising from a breach of contract or warranty, or arising in tort, strict liability, by statute or otherwise, even if it has been advised of their possible existence or if such loss, damages or expenses were reasonably foreseeable.",
+          "confidence": 1.0
+        }
+      ],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "In no event shall either party be liable for special, consequential, incidental, indirect or punitive loss, damages or expenses arising out of or relating to this Agreement, whether arising from a breach of contract or warranty, or arising in tort, strict liability, by statute or otherwise, even if it has been advised of their possible existence or if such loss, damages or expenses were reasonably foreseeable."
+      ],
+      "provenance": {
+        "source_document_id": "2023-069",
+        "page_refs": []
+      },
+      "confidence_overall": 1.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 9,
+      "title": "Indemnification",
+      "right_holder": "NCTCOG",
+      "obligor": "Contractor",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "Contractor shall defend, indemnify, and hold harmless NCTCOG and Participating Entities, NCTCOG\u2019s affiliates, and any of their respective directors, officers, employees, agents, subcontractors, successors, and assigns from any and all suits, actions, claims, demands, judgments, liabilities, losses, damages, costs, and expenses (including reasonable attorneys\u2019 fees and court costs) (collectively, \u201cLosses\u201d) arising out of or relating to: (i) Services performed and carried out pursuant to this Agreement; (ii) breach of any obligation, warranty, or representation in this Agreement, (iii) the negligence or willful misconduct of Contractor and/or its employees or subcontractors; or (iv) any infringement, misappropriation, or violation by Contractor and/or its employees or subcontractors of any right of a third party; provided, however, that Contractor shall have no obligation to defend, indemnify, or hold harmless to the extent any Losses are the result of NCTCOG\u2019s or Participating Entities\u2019 gross negligence or willful misconduct."
+      ],
+      "provenance": {
+        "source_document_id": "2023-069",
+        "page_refs": []
+      },
+      "confidence_overall": 1.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 6,
+      "title": "Confidentiality",
+      "right_holder": "Each Party",
+      "obligor": "Contractor",
+      "variables": [
+        {
+          "name": "ci_return_sla_bd",
+          "type": "int",
+          "value": null,
+          "unit": "n/a",
+          "evidence": "Contractor acknowledges that any information it or its employees, agents, or subcontractors obtain regarding the operation of NCTCOG or Participating Entities, its products, services, policies, customer, personnel, and other aspect of its operation (\u201cConfidential Information\u201d) is proprietary and confidential, and shall not be revealed, sold, exchanged, traded, or disclosed to any person, company, or other entity during the period of the Contractor\u2019s retention hereunder or at any time thereafter without the express written permission of NCTCOG or Participating Entity.",
+          "confidence": 0.5
+        }
+      ],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "Contractor acknowledges that any information it or its employees, agents, or subcontractors obtain regarding the operation of NCTCOG or Participating Entities, its products, services, policies, customer, personnel, and other aspect of its operation (\u201cConfidential Information\u201d) is proprietary and confidential, and shall not be revealed, sold, exchanged, traded, or disclosed to any person, company, or other entity during the period of the Contractor\u2019s retention hereunder or at any time thereafter without the express written permission of NCTCOG or Participating Entity."
+      ],
+      "provenance": {
+        "source_document_id": "2023-069",
+        "page_refs": []
+      },
+      "confidence_overall": 0.5,
+      "defaults_applied": [
+        "ci_return_sla_bd: no numeric SLA provided"
+      ],
+      "external_inference_used": false
+    }
+  ],
+  "file_name": "Agreement-2023-069-Windstream-Fully-Executed.pdf"
+}

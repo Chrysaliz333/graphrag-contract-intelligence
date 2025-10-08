@@ -1,0 +1,171 @@
+{
+  "agreement": {
+    "agreement_name": "Master Services Agreement",
+    "agreement_type": "Master Service Agreement",
+    "agreement_date": "2020-11-11",
+    "effective_date": "2020-11-11",
+    "expiration_date": "2023-08-31",
+    "renewal_term": "one additional one (1) year",
+    "notice_period_to_terminate_renewal": "30 days",
+    "auto_renewal": false,
+    "total_contract_value": null,
+    "parties": [
+      {
+        "role": "Buyer",
+        "name": "The Texas A&M University System",
+        "incorporation_country": "United States",
+        "incorporation_state": "Texas"
+      },
+      {
+        "role": "Vendor",
+        "name": "CBRE Heery, Inc.",
+        "incorporation_country": "United States",
+        "incorporation_state": "Texas"
+      }
+    ],
+    "governing_law": {
+      "country": "United States",
+      "state": "Texas",
+      "most_favored_country": null
+    },
+    "dispute_resolution": {
+      "method": "negotiation",
+      "venue": "Brazos County, Texas",
+      "jurisdiction": "Texas",
+      "governing_rules": "Chapter 2260, Texas Government Code"
+    }
+  },
+  "clauses": [
+    {
+      "clause_id": 4,
+      "title": "Termination Rights",
+      "right_holder": "A&M System",
+      "obligor": "Provider",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "A. For Cause: In the event of substantial failure by Provider to perform in accordance with the terms hereof, A&M System may terminate this MSA upon fifteen (15) days written notice of termination setting forth the nature of the failure (the termination shall not be effective if the failure is fully cured prior by the end of the fifteen-day period), provided that said failure is through no fault of A&M System.",
+        "B. For Convenience: A&M System may terminate this MSA at any time upon thirty (30) days prior notice to Provider."
+      ],
+      "provenance": {
+        "source_document_id": "contract_001",
+        "page_refs": [2]
+      },
+      "confidence_overall": 1.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 7,
+      "title": "Insurance Requirements",
+      "right_holder": "A&M System",
+      "obligor": "Provider",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "Provider shall obtain and maintain, for the duration of this MSA or longer, the insurance coverage set forth below.",
+        "A. Worker’s Compensation Statutory Benefits (Coverage A) Statutory Employers Liability (Coverage B) $1,000,000 Each Accident $1,000,000 Disease/Employee $1,000,000 Disease/Policy Limit",
+        "B. Automobile Liability Business Auto Liability Insurance covering all owned, non-owned or hired automobiles, with limits of not less than $1,000,000 Single Limit of liability per accident for Bodily Injury and Property Damage.",
+        "C. Commercial General Liability Each Occurrence Limit $1,000,000 General Aggregate Limit $2,000,000 Products / Completed Operations $1,000,000 Personal / Advertising Injury $1,000,000 Damage to rented Premises $300,000 Medical Payments $5,000."
+      ],
+      "provenance": {
+        "source_document_id": "contract_001",
+        "page_refs": [11]
+      },
+      "confidence_overall": 1.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 8,
+      "title": "Indemnification",
+      "right_holder": "A&M System",
+      "obligor": "Provider",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "Provider agrees to indemnify and hold harmless A&M System from any claim, damage, liability, expense or loss to the extent arising out of Provider’s negligent or willful errors or omissions under this MSA."
+      ],
+      "provenance": {
+        "source_document_id": "contract_001",
+        "page_refs": [3]
+      },
+      "confidence_overall": 1.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 9,
+      "title": "Limitations of Liability",
+      "right_holder": "A&M System",
+      "obligor": "Provider",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "Neither party shall be liable for any lost or prospective profits or any other indirect, consequential, special, incidental, punitive, or other exemplary losses or damages, whether based in contract, warranty, indemnity, negligence, strict liability or other tort or otherwise, regardless of the foreseeability or the cause thereof.",
+        "In no event shall Provider incur liability under this Agreement or otherwise relating to the services provided hereunder beyond the amount of fees received or to be received by Provider on a project."
+      ],
+      "provenance": {
+        "source_document_id": "contract_001",
+        "page_refs": [6]
+      },
+      "confidence_overall": 1.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 10,
+      "title": "Force Majeure",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "Neither party will be in breach of its obligations under this Agreement or incur any liability to the other party for any losses or damages of any nature whatsoever incurred or suffered by that other party if and to the extent that it is prevented from carrying out those obligations by, or such losses or damages are caused by, a Force Majeure event (as defined below).",
+        "“Force Majeure event” is defined as: 1) acts of God; 2) war; 3) act(s) of terrorism; 4) fires; 5) explosions; 6) natural disasters, to include without limitation, hurricanes, floods, and tornadoes; 7) failure of transportation; 8) strike(s); 9) loss or shortage of transportation facilities; 10) lockout, or commandeering of materials, products, plants or facilities by the government or other order (both federal and state); 11) interruptions by government or court orders (both federal and state); 12) present and future orders of any regulatory body having proper jurisdiction; 13) civil disturbances, to include without limitation, riots, rebellions, and insurrections; 14) epidemic(s), pandemic(s), or other national, state, or regional emergency(ies); and 15) any other cause not enumerated in this provision, but which is beyond the reasonable control of the party whose performance is affected and which by the exercise of all reasonable due diligence, such party is unable to overcome."
+      ],
+      "provenance": {
+        "source_document_id": "contract_001",
+        "page_refs": [5]
+      },
+      "confidence_overall": 1.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    }
+  ]
+}

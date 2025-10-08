@@ -1,0 +1,174 @@
+{
+  "agreement": {
+    "agreement_name": "Amended and Restated Master Services Agreement",
+    "agreement_type": "Master Services Agreement",
+    "agreement_date": "2019-11-21",
+    "effective_date": "2019-11-21",
+    "expiration_date": null,
+    "renewal_term": "one year",
+    "notice_period_to_terminate_renewal": "90 calendar days",
+    "auto_renewal": true,
+    "total_contract_value": null,
+    "parties": [
+      {
+        "role": "Adviser",
+        "name": "Xxxxxxxxx Capital Management, Inc.",
+        "incorporation_country": "USA",
+        "incorporation_state": "null"
+      },
+      {
+        "role": "Service Provider",
+        "name": "U.S. Bancorp Fund Services, LLC",
+        "incorporation_country": "USA",
+        "incorporation_state": "null"
+      }
+    ],
+    "governing_law": {
+      "country": "USA",
+      "state": "Delaware",
+      "most_favored_country": null
+    },
+    "dispute_resolution": {
+      "method": "arbitration",
+      "venue": null,
+      "jurisdiction": null,
+      "governing_rules": "American Arbitration Association"
+    }
+  },
+  "clauses": [
+    {
+      "clause_id": 3,
+      "title": "Indemnification; Limitation of Liability",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [
+        {
+          "name": "liability_cap",
+          "type": "bool",
+          "value": false,
+          "unit": "n/a",
+          "evidence": "USBFS shall exercise reasonable care in the performance of its duties under this Agreement. USBFS shall not be liable for any error of judgment or mistake of law or for any loss suffered by the Adviser and the Funds in connection with matters to which this Agreement relates, including losses resulting from mechanical breakdowns or the failure of communication or power supplies beyond USBFS’s control, except a loss arising out of or relating to USBFS’s refusal or failure to comply with the terms of this Agreement or from bad faith, negligence, or willful misconduct on its part in the performance of its duties under this Agreement.",
+          "confidence": 1.0
+        }
+      ],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": "USBFS shall exercise reasonable care in the performance of its duties under this Agreement. USBFS shall not be liable for any error of judgment or mistake of law or for any loss suffered by the Adviser and the Funds in connection with matters to which this Agreement relates, including losses resulting from mechanical breakdowns or the failure of communication or power supplies beyond USBFS’s control, except a loss arising out of or relating to USBFS’s refusal or failure to comply with the terms of this Agreement or from bad faith, negligence, or willful misconduct on its part in the performance of its duties under this Agreement.",
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "USBFS shall exercise reasonable care in the performance of its duties under this Agreement. USBFS shall not be liable for any error of judgment or mistake of law or for any loss suffered by the Adviser and the Funds in connection with matters to which this Agreement relates, including losses resulting from mechanical breakdowns or the failure of communication or power supplies beyond USBFS’s control, except a loss arising out of or relating to USBFS’s refusal or failure to comply with the terms of this Agreement or from bad faith, negligence, or willful misconduct on its part in the performance of its duties under this Agreement."
+      ],
+      "provenance": {
+        "source_document_id": "contract_001",
+        "page_refs": []
+      },
+      "confidence_overall": 1.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 4,
+      "title": "Proprietary and Confidential Information",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": "USBFS agrees on behalf of itself and its directors, officers, and employees to treat confidentially and as proprietary information of the Funds all records and other information relative to the Funds and prior, present, or potential shareholders of the Funds (and clients of said shareholders), and not to use such records and information for any purpose other than the performance of its responsibilities and duties hereunder, except after prior notification to and approval in writing by the Funds, which approval shall not be unreasonably withheld and may not be withheld where USBFS may be exposed to civil or criminal contempt proceedings for failure to comply, when requested to divulge such information by duly constituted authorities, or when so requested by the Adviser or the Funds.",
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "USBFS agrees on behalf of itself and its directors, officers, and employees to treat confidentially and as proprietary information of the Funds all records and other information relative to the Funds and prior, present, or potential shareholders of the Funds (and clients of said shareholders), and not to use such records and information for any purpose other than the performance of its responsibilities and duties hereunder, except after prior notification to and approval in writing by the Funds, which approval shall not be unreasonably withheld and may not be withheld where USBFS may be exposed to civil or criminal contempt proceedings for failure to comply, when requested to divulge such information by duly constituted authorities, or when so requested by the Adviser or the Funds."
+      ],
+      "provenance": {
+        "source_document_id": "contract_001",
+        "page_refs": []
+      },
+      "confidence_overall": 1.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 5,
+      "title": "Term of Agreement",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": "This Agreement shall become effective as of the date first written above and will continue in effect for a period of one (1) year (the “Initial Term”). Subsequent to the Initial Term, this Agreement shall renew automatically for subsequent one-year periods.",
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "This Agreement shall become effective as of the date first written above and will continue in effect for a period of one (1) year (the “Initial Term”). Subsequent to the Initial Term, this Agreement shall renew automatically for subsequent one-year periods."
+      ],
+      "provenance": {
+        "source_document_id": "contract_001",
+        "page_refs": []
+      },
+      "confidence_overall": 1.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 6,
+      "title": "Termination",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": "After the Initial Term, this Agreement may be terminated by either party upon giving ninety (90) calendar days prior written notice to the other party or such shorter period as is mutually agreed upon by the parties (a “Regular Termination”). This Agreement may be terminated for cause at any time upon a party’s failure to cure a material breach. In such an instance, the party alleging material breach shall provide to the other party detailed notice identifying the breach and giving twenty (20) business days to cure.",
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "After the Initial Term, this Agreement may be terminated by either party upon giving ninety (90) calendar days prior written notice to the other party or such shorter period as is mutually agreed upon by the parties (a “Regular Termination”). This Agreement may be terminated for cause at any time upon a party’s failure to cure a material breach. In such an instance, the party alleging material breach shall provide to the other party detailed notice identifying the breach and giving twenty (20) business days to cure."
+      ],
+      "provenance": {
+        "source_document_id": "contract_001",
+        "page_refs": []
+      },
+      "confidence_overall": 1.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 14,
+      "title": "Dispute Resolution",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": "USBFS and the Adviser agree that, should a dispute arise with respect to an obligation under this Agreement, they will negotiate resolution in good faith and that they will continue to conduct business as usual to the extent reasonably possible. Should the parties not be able to achieve resolution themselves, they will submit the dispute to binding arbitration under the rules of the American Arbitration Association at an agreed upon venue.",
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "USBFS and the Adviser agree that, should a dispute arise with respect to an obligation under this Agreement, they will negotiate resolution in good faith and that they will continue to conduct business as usual to the extent reasonably possible. Should the parties not be able to achieve resolution themselves, they will submit the dispute to binding arbitration under the rules of the American Arbitration Association at an agreed upon venue."
+      ],
+      "provenance": {
+        "source_document_id": "contract_001",
+        "page_refs": []
+      },
+      "confidence_overall": 1.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    }
+  ]
+}

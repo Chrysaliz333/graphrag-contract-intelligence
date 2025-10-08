@@ -1,0 +1,165 @@
+{
+  "agreement": {
+    "agreement_name": "AMENDED AND RESTATED MASTER SERVICES AGREEMENT",
+    "agreement_type": "Master Services Agreement",
+    "agreement_date": "2013-08-08",
+    "effective_date": "2013-08-08",
+    "expiration_date": null,
+    "renewal_term": null,
+    "notice_period_to_terminate_renewal": null,
+    "auto_renewal": true,
+    "total_contract_value": {
+      "amount": 50000000,
+      "currency": "USD"
+    },
+    "parties": [
+      {
+        "role": "Service Provider",
+        "name": "BROOKFIELD ASSET MANAGEMENT INC.",
+        "incorporation_country": null,
+        "incorporation_state": null
+      },
+      {
+        "role": "Buyer",
+        "name": "BROOKFIELD PROPERTY PARTNERS L.P.",
+        "incorporation_country": null,
+        "incorporation_state": null
+      },
+      {
+        "role": "Buyer",
+        "name": "BROOKFIELD PROPERTY L.P.",
+        "incorporation_country": null,
+        "incorporation_state": null
+      },
+      {
+        "role": "Service Provider",
+        "name": "BROOKFIELD GLOBAL MANAGEMENT LIMITED",
+        "incorporation_country": null,
+        "incorporation_state": null
+      }
+    ],
+    "governing_law": {
+      "country": "Canada",
+      "state": "Ontario",
+      "most_favored_country": null
+    },
+    "dispute_resolution": {
+      "method": "litigation",
+      "venue": "Ontario courts situated in the City of Toronto",
+      "jurisdiction": "Ontario",
+      "governing_rules": null
+    }
+  },
+  "clauses": [
+    {
+      "clause_id": 10,
+      "title": "Indemnity",
+      "right_holder": "Indemni\ufb01ed Party",
+      "obligor": "Indemnifying Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "10.1.1 The Service Recipients (for the purposes of this Article 10, each an \u201cIndemnifying Party\u201d) hereby jointly and severally agree, to the fullest extent permitted by applicable Laws, to indemnify and hold harmless each member of the Manager Group, any of its A\ufb03liates (other than any member of the BPY Group) and any directors, o\ufb03cers, agents, subcontractors, contractors, delegates, members, partners, shareholders, employees and other representatives of each of the foregoing (each, an \u201cIndemni\ufb01ed Party\u201d) from and against any claims, liabilities, losses, damages, costs or expenses (including legal fees) (\u201cLiabilities\u201d) incurred by them or threatened in connection with any and all actions, suits, investigations, proceedings or claims of any kind whatsoever, whether arising under statute or action of a Governmental Authority or otherwise or in connection with the business, investments and activities of the Service Recipients or in respect of or arising from this Agreement or the Services provided hereunder (\u201cClaims\u201d), including any Claims arising on account of the Governmental Charges contemplated by Section 7.6; provided that no Indemni\ufb01ed Party will be so indemni\ufb01ed with respect to any Claim to the extent that such Claim is \ufb01nally determined by a \ufb01nal and non-appealable judgment entered by a court of competent jurisdiction, or pursuant to a settlement agreement agreed to by such Indemni\ufb01ed Party, to have resulted from such Indemni\ufb01ed Party\u2019s bad faith, fraud, wilful misconduct, gross negligence or, in the case of a criminal matter, conduct undertaken with knowledge that the conduct was unlawful."
+      ],
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 10,
+      "title": "Limitation of Liability",
+      "right_holder": "Indemni\ufb01ed Party",
+      "obligor": "Indemnifying Party",
+      "variables": [
+        {
+          "name": "cap_amount",
+          "type": "int",
+          "value": 100000000,
+          "unit": "USD",
+          "evidence": "10.2.3 The maximum amount of the aggregate liability of the Indemni\ufb01ed Parties pursuant to this Agreement will be equal to the amounts previously paid in respect of Services pursuant to this Agreement in the two most recent calendar years by the Service Recipients pursuant to Article 7.",
+          "confidence": 1.0
+        },
+        {
+          "name": "cap_type",
+          "type": "string",
+          "value": "aggregate",
+          "unit": null,
+          "evidence": "10.2.3 The maximum amount of the aggregate liability of the Indemni\ufb01ed Parties pursuant to this Agreement will be equal to the amounts previously paid in respect of Services pursuant to this Agreement in the two most recent calendar years by the Service Recipients pursuant to Article 7.",
+          "confidence": 1.0
+        },
+        {
+          "name": "cap_calculation",
+          "type": "string",
+          "value": "amounts previously paid in respect of Services",
+          "unit": null,
+          "evidence": "10.2.3 The maximum amount of the aggregate liability of the Indemni\ufb01ed Parties pursuant to this Agreement will be equal to the amounts previously paid in respect of Services pursuant to this Agreement in the two most recent calendar years by the Service Recipients pursuant to Article 7.",
+          "confidence": 1.0
+        },
+        {
+          "name": "cap_party",
+          "type": "string",
+          "value": "Indemni\ufb01ed Parties",
+          "unit": null,
+          "evidence": "10.2.3 The maximum amount of the aggregate liability of the Indemni\ufb01ed Parties pursuant to this Agreement will be equal to the amounts previously paid in respect of Services pursuant to this Agreement in the two most recent calendar years by the Service Recipients pursuant to Article 7.",
+          "confidence": 1.0
+        },
+        {
+          "name": "carve_outs",
+          "type": "array",
+          "value": [
+            "bad faith",
+            "fraud",
+            "wilful misconduct",
+            "gross negligence"
+          ],
+          "unit": null,
+          "evidence": "10.2.2 The Service Recipients hereby agree that no Indemni\ufb01ed Party will be liable to a Service Recipient, a Service Recipient\u2019s Governing Body (including, for greater certainty, a director or o\ufb03cer of a Service Recipient or another individual with similar function or capacity) or any security holder or partner of a Service Recipient for any Liabilities that may occur as a result of any acts or omissions by the Indemni\ufb01ed Party pursuant to or in accordance with this Agreement, except to the extent that such Liabilities are \ufb01nally determined by a \ufb01nal and non-appealable judgment entered by a court of competent jurisdiction to have resulted from the Indemni\ufb01ed Party\u2019s bad faith, fraud, wilful misconduct, gross negligence, or in the case of a criminal matter, conduct undertaken with knowledge that the conduct was unlawful.",
+          "confidence": 1.0
+        }
+      ],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "10.2.1 The Managers assume no responsibility under this Agreement other than to render the Services in good faith and will not be responsible for any action of a Service Recipient\u2019s Governing Body in following or declining to follow any advice or recommendations of the relevant Service Provider, including as set forth in Section 3.2 hereof."
+      ],
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 11,
+      "title": "Term and Termination",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "11.1 Term This Agreement will continue in full force and e\ufb00ect, in perpetuity, until terminated in accordance with Section 11.2 or Section 11.3."
+      ],
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    }
+  ],
+  "file_name": "Law_Insider_brookfield-property-partners-lp_brookfield-asset-management-inc-and-brookfield-property-partners-lp-and-brookfield-proper_Filed_08-08-2013_Contract.pdf"
+}

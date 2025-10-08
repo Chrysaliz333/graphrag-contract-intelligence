@@ -1,0 +1,355 @@
+Generate a valid JSON document that extracts comprehensive, structured information from this contract.
+
+CRITICAL INSTRUCTIONS:
+- Use ONLY information from this specific contract
+- Extract complete excerpts (full paragraphs, not snippets)
+- For numerical values, provide the actual number (not "specified" or "mentioned")
+- If information is not found, use null or empty array [] as appropriate
+- Ensure the JSON is valid and properly formatted
+- Do not include anything except the JSON document in your response
+
+EXTRACTION REQUIREMENTS:
+
+=== SECTION 1: BASIC AGREEMENT INFORMATION ===
+
+1. Agreement Identification
+   - What is the full name of this agreement?
+   - What type of contract is this? (e.g., Master Service Agreement, License Agreement, Supply Agreement)
+   - What is the agreement/signature date? (format: YYYY-MM-DD)
+   - What is the effective date? (format: YYYY-MM-DD)
+   - What is the expiration date? (format: YYYY-MM-DD)
+   - What is the renewal term?
+   - What is the notice period to terminate renewal?
+   - Does the agreement auto-renew? (true/false)
+   - What is the total contract value, if specified? (amount and currency)
+
+2. Parties
+   For each party to the agreement:
+   - What is their role? (e.g., Vendor, Buyer, Licensor, Licensee, Service Provider, Customer)
+   - What is their legal name?
+   - In which country are they incorporated? (use ISO 3166 country name)
+   - In which state/province are they incorporated?
+
+3. Governing Law and Dispute Resolution
+   - Which country's law governs this agreement?
+   - Which state's law governs this agreement?
+   - If multiple countries mentioned, which is most favored?
+   - What is the dispute resolution method? (arbitration, litigation, mediation, negotiation)
+   - What is the venue for disputes?
+   - What jurisdiction applies?
+   - What rules govern dispute resolution? (e.g., AAA, JAMS, ICC)
+
+=== SECTION 2: LIABILITY AND INDEMNIFICATION ===
+
+4. Limitation of Liability
+   - Does the contract contain a liability cap? (true/false)
+   - If yes:
+     * What is the cap amount? (numeric value)
+     * What currency?
+     * What type of cap? (per_incident, aggregate, annual, unlimited)
+     * How is the cap calculated? (e.g., "12 months of fees paid", "fixed amount")
+     * Which party does the cap apply to?
+     * What are the carve-outs/exceptions? (list situations where cap doesn't apply, e.g., fraud, IP infringement, gross negligence, data breach, death/bodily injury)
+     * Provide FULL excerpts from the liability limitation section
+
+5. Indemnification
+   For each indemnification obligation:
+   - Who is the indemnitor (party providing indemnification)?
+   - Who is the indemnitee (party receiving indemnification)?
+   - What is the scope of indemnification?
+   - What triggers the indemnification obligation? (list all triggers)
+   - What limitations apply to indemnification?
+   - Provide FULL excerpts
+
+=== SECTION 3: OBLIGATIONS AND DELIVERABLES ===
+
+6. Performance Obligations
+   Obligation detection rules:
+   - Treat as an obligation any sentence where a party “shall / must / will / is required to / agrees to / responsible for …”
+   - Obligations can appear under headings such as “Services”, “Statement of Work (SOW)”, “Service Levels”, “Change Control”, “Maintenance”, “Reporting”, “Security”, or anywhere similar language occurs.
+
+   Output rules:
+   - For every obligation found anywhere, append an object to agreement.obligations (do NOT restrict to a specific heading).
+   - Each object must include:
+       * obligation_type (delivery|service|payment|reporting|maintenance|notice|insurance|security|other)
+       * obligated_party
+       * description (concise summary)
+       * deadline (string or null — set to null if no timing cues)
+       * deliverables (string/list or null)
+       * performance_standards (string or null)
+       * consequences_of_breach (string or null)
+       * excerpts (full paragraph text)
+   - Extract at least three obligations if present; if fewer exist, return all found. Do not skip an obligation because a deadline is missing—use null in that case.
+   - Deadline cues include phrases such as “within X (Business) Days”, “no later than”, “by <date>”, “upon”.
+
+=== SECTION 4: PAYMENT AND FINANCIAL TERMS ===
+
+7. Payment Terms
+   - What is the payment schedule? (e.g., monthly, quarterly, upon delivery, milestone-based)
+   - What payment methods are accepted?
+   - What currency?
+   - What are the late payment penalties?
+   - What is the pricing model? (fixed fee, time and materials, subscription, usage-based, etc.)
+   - How are price increases handled?
+   - Provide FULL excerpts
+
+=== SECTION 5: INTELLECTUAL PROPERTY ===
+
+8. IP Ownership and Licensing
+   For each IP provision:
+   - What type? (ownership, license, joint_ownership, assignment)
+   - Who owns or licenses the IP?
+   - What is the subject matter?
+   - If a license:
+     * What type? (exclusive, non_exclusive, sole)
+     * What is the scope?
+     * What territory does it cover?
+     * What is the duration?
+     * Is it sublicensable? (true/false)
+     * Is it transferable? (true/false)
+     * Is it perpetual? (true/false)
+     * Is it irrevocable? (true/false)
+   - Provide FULL excerpts
+
+=== SECTION 6: CONFIDENTIALITY AND DATA PROTECTION ===
+
+9. Confidentiality
+   - Does the contract contain confidentiality obligations? (true/false)
+   - What is the duration of confidentiality obligations?
+   - Do they survive termination? (true/false)
+   - What are the exceptions to confidentiality? (list all)
+   - Are there return/destruction obligations? (true/false)
+   - Provide FULL excerpts
+
+10. Data Protection and Privacy
+    - Is the contract GDPR compliant? (true/false)
+    - Is there a data processing agreement? (true/false)
+    - What data subject rights are mentioned? (list all)
+    - What is the breach notification period?
+    - Are there data location/storage restrictions? (list all)
+    - Is consent required for subprocessors? (true/false)
+    - Provide FULL excerpts
+
+=== SECTION 7: COMPLIANCE AND STANDARDS ===
+
+11. Compliance Frameworks
+    For each compliance framework mentioned (GDPR, SOC2, HIPAA, ISO27001, PCI-DSS, etc.):
+    - What is the framework name?
+    - Is certification required? (true/false)
+    - Are audit rights granted? (true/false)
+    - What is the audit frequency?
+    - What specific requirements are mentioned?
+    - Provide FULL excerpts
+
+=== SECTION 8: WARRANTIES ===
+
+12. Warranties
+    For each warranty:
+    - What type of warranty? (title, non-infringement, performance, fitness for purpose, etc.)
+    - Who provides the warranty?
+    - What is the warranty statement?
+    - What is the duration?
+    - What remedies are available for breach?
+    - What disclaimers apply? (e.g., "AS IS", no implied warranties)
+    - Provide FULL excerpts
+
+=== SECTION 9: TERMINATION ===
+
+13. Termination Rights
+    - Termination for Convenience:
+      * Is it allowed? (true/false)
+      * What is the notice period?
+      * Is there a termination fee?
+      * Which parties can terminate for convenience?
+
+    - Termination for Cause:
+      * What types of breaches allow termination?
+      * What is the cure period?
+      * Is notice required? (true/false)
+
+    - Post-Termination:
+      * What obligations survive termination? (list each with responsible party and duration)
+      * Which clauses explicitly survive termination?
+
+    - Provide FULL excerpts
+
+=== SECTION 10: INSURANCE ===
+
+14. Insurance Requirements
+    - Is insurance required? (true/false)
+    - For each type of insurance:
+      * What type? (general liability, professional liability, cyber liability, etc.)
+      * What is the minimum coverage amount?
+      * What currency?
+      * Must the other party be named as additional insured? (true/false)
+    - Is proof of insurance required? (true/false)
+    - Provide FULL excerpts
+
+=== SECTION 11: RESTRICTIONS AND COVENANTS ===
+
+15. Restrictive Covenants
+    For each restriction (non-compete, exclusivity, no-solicit, non-disparagement, etc.):
+    - What type of restriction?
+    - Which party is restricted?
+    - Describe the restriction in detail
+    - What is the duration?
+    - What is the geographic scope?
+    - What exceptions apply?
+    - Provide FULL excerpts
+
+=== SECTION 12: CHANGE OF CONTROL ===
+
+16. Change of Control Provisions
+    - Does change of control trigger termination rights? (true/false)
+    - Is consent required for change of control? (true/false)
+    - Is notification required? (true/false)
+    - Which party is affected by change of control provisions?
+    - Provide FULL excerpts
+
+=== SECTION 13: FORCE MAJEURE ===
+
+17. Force Majeure
+    - Does the contract contain force majeure provisions? (true/false)
+    - What events are covered? (list all: natural disasters, pandemics, war, strikes, etc.)
+    - What is the notice period?
+    - Are obligations suspended during force majeure? (true/false)
+    - Can the agreement be terminated due to force majeure? (true/false)
+    - After what period can termination occur?
+    - Provide FULL excerpts
+
+=== OUTPUT FORMAT ===
+
+Your response must be ONLY a valid JSON document matching this structure:
+
+{
+  "agreement": {
+    ... as specified in Sections 1-13 ...,
+    "agreement_type": "string",
+    "auto_renewal": true,
+    "parties": [
+      {
+        "role": "string",
+        "name": "string",
+        "incorporation_country": "string or null",
+        "incorporation_state": "string or null"
+      }
+    ],
+    "governing_law": {
+      "country": "string or null",
+      "state": "string or null",
+      "most_favored_country": "string or null"
+    },
+    "dispute_resolution": {
+      "method": "string or null",
+      "venue": "string or null",
+      "jurisdiction": "string or null",
+      "governing_rules": "string or null"
+    }
+  },
+  "clauses": [
+    {
+      "clause_id": 0,
+      "title": "string",
+      "right_holder": "Each Party|Counterparty|Affected Party|Party A|Party B",
+      "obligor": "Each Party|Counterparty|Affected Party|Party A|Party B",
+      "variables": [
+        {
+          "name": "string",                         // e.g., ci_return_sla_bd, remediation_sla_bd, control_model, audit_rights, indemnitor
+          "type": "int|enum|bool|string",
+          "value": 0,
+          "unit": "business_days|calendar_days|n/a",
+          "evidence": "verbatim span from contract",
+          "confidence": 0.0
+        }
+      ],
+      "drafts": {
+        "p0_full": "string or null",
+        "p25_delta": [{"op":"extend|shorten|broaden|tighten","target":"string","value":0,"rationale":"string"}],
+        "p50_full": "string (may include {{var=value}} placeholders)",
+        "p75_delta": [{"op":"tighten|broaden","target":"string","value":0,"rationale":"string"}],
+        "p100_full": "string or null"
+      },
+      "dependencies": ["string"],
+      "excerpts": ["full verbatim paragraph(s) supporting variables/anchors"],
+      "provenance": {
+        "source_document_id": "string",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    }
+  ]
+}
+
+IMPORTANT REMINDERS:
+- Extract COMPLETE excerpts (full paragraphs with all context)
+- Use actual numbers; if missing, return null/[]
+- Ensure valid JSON formatting
+- Do not include any text before or after the JSON
+
+
+=== SECTION 14: CLAUSE VARIABLES & NEGOTIATION SPECTRUM ===
+Goal: For each relevant clause in this contract, extract variables and build the 0/25/50/75/100 spectrum.
+
+Clause IDs must be one of: 6 (Confidentiality), 7 (Data Breach Notification), 8 (Data Protection Compliance), 9 (Technical & Organisational Measures), 10 (Marketing & Promotion), 11 (Indemnification). If a clause is not present in the contract, include the entry with that clause_id and leave variables/drafts empty.
+
+Variable catalogue (name:type -> detection rules):
+- ci_return_sla_bd:int  -> SLA (business days) to return/destroy Confidential Information.
+  Patterns: "within X Business Days", "no later than X days of termination".
+- remediation_sla_bd:int -> breach notification SLA (business days).
+  Patterns: "within X (Business )?Days", "without undue delay".
+- control_model:enum{guidance,opt_out,opt_in,preapproved_only}
+  Mapping: "aligned with brand guidelines"->guidance; "may proceed unless objected"->opt_out;
+           "requires prior consent/approval"->opt_in; "prior written approval for all campaigns/materials"->preapproved_only
+- audit_rights:enum{none,annual,biannual,continuous}
+  Mapping: none stated->none; "upon request/annual review"->annual; "twice per year"->biannual; "any time/continuous"->continuous
+- indemnification variables:
+  * Emit variables for: indemnitor, indemnitee, duty_to_defend, triggers (repeat for each trigger), exclusions (repeat for each exclusion), control_of_defense, costs_borne_by, notice_period_bd.
+  * Allowed values follow the schema: indemnitor {Vendor, Customer, EachParty, Counterparty}; indemnitee {Vendor, Customer, EachParty, Affiliates, Directors, Officers, Employees, Agents, Subcontractors, Successors, Assigns, Customers, EndUsers, ParticipatingEntities}; triggers {services, breach, negligence_or_willful_misconduct, ip_infringement, violation_of_law, confidentiality_breach, data_breach}; exclusions {beneficiary_gross_negligence, beneficiary_willful_misconduct, beneficiary_breach, indirect_damages}; control_of_defense {Indemnitor, Indemnitee, Mutual, NotSpecified}; costs_borne_by {Indemnitor, Shared, NotSpecified}.
+  * notice_period_bd should be integer days; set unit "business_days" when the clause explicitly says Business Days, otherwise "calendar_days".
+  * Every variable must include a concise evidence span (full paragraph goes in clause.excerpts) and a confidence score. If a value is absent or vague, set value to null, unit "n/a", confidence ≤ 0.5, and add an explanation to defaults_applied.
+
+Normalisation rules:
+- Parties -> one of: Each Party, Counterparty, Affected Party, Party A, Party B.
+- Prefer unit "business_days"; if only calendar days are stated, set unit "calendar_days".
+- For ci_return_sla_bd and remediation_sla_bd you must capture an explicit numeric SLA. If no number is present in the clause:
+  * set value to null
+  * set unit to "n/a"
+  * set confidence ≤ 0.5
+  * append a note to defaults_applied (e.g., "ci_return_sla_bd: no numeric SLA provided")
+- Include verbatim evidence spans and a confidence score for each variable.
+- Do NOT invent variables; only include if grounded in the clause text.
+
+Example Indemnification clause object:
+{
+  "clause_id": 11,
+  "title": "Indemnification",
+  "right_holder": "Customer",
+  "obligor": "Contractor",
+  "variables": [
+    {"name":"indemnitor","type":"enum","value":"Vendor","unit":"n/a","evidence":"Contractor shall defend, indemnify, and hold harmless ...","confidence":0.98},
+    {"name":"indemnitee","type":"enum","value":"Customer_and_Affiliates","unit":"n/a","evidence":"... NCTCOG and Participating Entities ...","confidence":0.98},
+    {"name":"duty_to_defend","type":"bool","value":true,"unit":"n/a","evidence":"Contractor shall defend, indemnify, and hold harmless ...","confidence":0.98},
+    {"name":"triggers","type":"enum","value":"services","unit":"n/a","evidence":"(i) Services performed ...","confidence":0.95},
+    {"name":"triggers","type":"enum","value":"breach","unit":"n/a","evidence":"(ii) breach of any obligation ...","confidence":0.95},
+    {"name":"triggers","type":"enum","value":"negligence_or_willful_misconduct","unit":"n/a","evidence":"(iii) the negligence or willful misconduct ...","confidence":0.95},
+    {"name":"triggers","type":"enum","value":"ip_infringement","unit":"n/a","evidence":"(iv) any infringement, misappropriation, or violation ...","confidence":0.95},
+    {"name":"exclusions","type":"enum","value":"beneficiary_gross_negligence_or_willful_misconduct","unit":"n/a","evidence":"... no obligation ... to the extent any Losses are the result of ... gross negligence or willful misconduct.","confidence":0.95},
+    {"name":"control_of_defense","type":"enum","value":null,"unit":"n/a","evidence":"(set to null if control is not stated explicitly)","confidence":0.5,
+      "defaults_applied":["control_of_defense: not specified"]}
+  ],
+  "drafts": {
+    "p0_full": null,
+    "p25_delta": [],
+    "p50_full": null,
+    "p75_delta": [],
+    "p100_full": null
+  },
+  "dependencies": ["liability cap","insurance"],
+  "excerpts": ["Contractor shall defend, indemnify, and hold harmless ... gross negligence or willful misconduct."],
+  "provenance": {"source_document_id":"2023-069","page_refs":[]},
+  "confidence_overall": 0.96,
+  "defaults_applied": [],
+  "external_inference_used": false
+}

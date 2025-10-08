@@ -1,0 +1,340 @@
+a,c,vs,es
+"(:Agreement {agreement_id: Agreement-2023-069-Windstream-Fully-Executed.pdf.json, name: Agreement-2023-069-Windstream-Fully-Executed.pdf.json})","(:Clause {excerpts: [Contractor shall defend, indemnify, and hold harmless NCTCOG and Participating Entities, NCTCOG’s affiliates, and any of their respective directors, officers, employees, agents, subcontractors, successors, and assigns from any and all suits, actions, claims, demands, judgments, liabilities, losses, damages, costs, and expenses (including reasonable attorneys’ fees and court costs) (collectively, “Losses”) arising out of or relating to: (i) Services performed and carried out pursuant to this Agreement.], draft_p25_delta: [], obligor: Contractor, title: Indemnification, external_inference_used: false, clause_order: 2, right_holder: NCTCOG, confidence_overall: 1.0, dependencies: [], agreement_id: Agreement-2023-069-Windstream-Fully-Executed.pdf.json, clause_id: 1, defaults_applied: [], draft_p75_delta: [], draft_p50_full: Contractor shall defend, indemnify, and hold harmless NCTCOG and Participating Entities., page_refs: [6], source_document_id: MASTER SERVICES AGREEMENT #2023-069})","[
+  {
+    identity: 4,
+    labels: [Variable],
+    properties: {
+      unit: n/a,
+      evidence: In no event shall either party be liable for special, consequential, incidental, indirect or punitive loss, damages or expenses arising out of or relating to this Agreement.,
+      clause_key: Agreement-2023-069-Windstream-Fully-Executed.pdf.json:::1,
+      confidence: 1.0,
+      name: liability_cap_exists,
+      type: bool,
+      value: false
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:4
+  },
+  {
+    identity: 6,
+    labels: [Variable],
+    properties: {
+      unit: n/a,
+      evidence: Contractor shall defend, indemnify, and hold harmless NCTCOG and Participating Entities, NCTCOG’s affiliates, and any of their respective directors, officers, employees, agents, subcontractors, successors, and assigns from any and all suits, actions, claims, demands, judgments, liabilities, losses, damages, costs, and expenses (including reasonable attorneys’ fees and court costs) (collectively, “Losses”) arising out of or relating to: (i) Services performed and carried out pursuant to this Agreement.,
+      clause_key: Agreement-2023-069-Windstream-Fully-Executed.pdf.json:::1,
+      confidence: 1.0,
+      name: indemnification_scope,
+      type: string,
+      value: Contractor shall defend, indemnify, and hold harmless NCTCOG and Participating Entities.
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:6
+  }
+]",[]
+"(:Agreement {agreement_id: Agreement-2023-069-Windstream-Fully-Executed.pdf.json, name: Agreement-2023-069-Windstream-Fully-Executed.pdf.json})","(:Clause {excerpts: [Contractor acknowledges that any information it or its employees, agents, or subcontractors obtain regarding the operation of NCTCOG or Participating Entities, its products, services, policies, customer, personnel, and other aspect of its operation (“Confidential Information”) is proprietary and confidential, and shall not be revealed, sold, exchanged, traded, or disclosed to any person, company, or other entity during the period of the Contractor’s retention hereunder or at any time thereafter without the express written permission of NCTCOG or Participating Entity.], draft_p25_delta: [], obligor: Contractor, title: Confidentiality, external_inference_used: false, clause_order: 3, right_holder: Each Party, confidence_overall: 1.0, dependencies: [], agreement_id: Agreement-2023-069-Windstream-Fully-Executed.pdf.json, clause_id: 2, defaults_applied: [], draft_p75_delta: [], draft_p50_full: Contractor acknowledges that any information it or its employees, agents, or subcontractors obtain regarding the operation of NCTCOG or Participating Entities, its products, services, policies, customer, personnel, and other aspect of its operation (“Confidential Information”) is proprietary and confidential., page_refs: [8], source_document_id: MASTER SERVICES AGREEMENT #2023-069})","[
+  {
+    identity: 9,
+    labels: [Variable],
+    properties: {
+      unit: n/a,
+      evidence: Contractor acknowledges that any information it or its employees, agents, or subcontractors obtain regarding the operation of NCTCOG or Participating Entities, its products, services, policies, customer, personnel, and other aspect of its operation (“Confidential Information”) is proprietary and confidential.,
+      clause_key: Agreement-2023-069-Windstream-Fully-Executed.pdf.json:::2,
+      confidence: 1.0,
+      name: confidentiality_obligations_exist,
+      type: bool,
+      value: true
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:9
+  }
+]",[]
+"(:Agreement {agreement_id: MASTER SERVICES AGREEMENT, name: MASTER SERVICES AGREEMENT, type: Master Service Agreement, auto_renewal: false})","(:Clause {excerpts: [Confidential Information of VCU shall include, but not be limited to information about VCU personnel and students of VCU to the extent such information is not available to the public domain in accordance with the laws of the Commonwealth of Virginia and FERPA. Contractor shall use its reasonable efforts to prevent and protect Confidential Information from unauthorized use or disclosure, with at least the same degree of care that Contractor uses to protect its own confidential and proprietary information, but in no event less than a reasonable degree of care under the circumstances. Each Party will only disclose the other Party’s Confidential Information to its employees, consultants, or subcontractors only on a need-to-know basis, provided that such employees or subcontractors are subject to confidentiality obligations no less restrictive than those contained herein. Upon the completion of the services and upon request of VCU, Contractor shall return all Confidential Information received in written format, including copies or reproductions or other media containing Confidential Information within seven (7) days of such request.], draft_p25_delta: [], obligor: Contractor, title: Confidentiality, external_inference_used: false, clause_order: 2, right_holder: Each Party, confidence_overall: 1.0, dependencies: [], agreement_id: MASTER SERVICES AGREEMENT, clause_id: 6, defaults_applied: [], draft_p75_delta: [], page_refs: [6], source_document_id: C0003310})","[
+  {
+    identity: 14,
+    labels: [Variable],
+    properties: {
+      unit: business_days,
+      evidence: Upon the completion of the services and upon request of VCU, Contractor shall return all Confidential Information received in written format, including copies or reproductions or other media containing Confidential Information within seven (7) days of such request.,
+      clause_key: MASTER SERVICES AGREEMENT:::6,
+      confidence: 1.0,
+      name: ci_return_sla_bd,
+      type: int,
+      value: 7
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:14
+  }
+]",[]
+"(:Agreement {agreement_id: MASTER SERVICES AGREEMENT, name: MASTER SERVICES AGREEMENT, type: Master Service Agreement, auto_renewal: false})","(:Clause {excerpts: [Contractor shall notify VCU of any data breach within ten (10) business days.], draft_p25_delta: [], obligor: Contractor, title: Data Breach Notification, external_inference_used: false, clause_order: 2, right_holder: Contractor, confidence_overall: 1.0, dependencies: [], agreement_id: MASTER SERVICES AGREEMENT, clause_id: 7, defaults_applied: [], draft_p75_delta: [], page_refs: [7], source_document_id: C0003310})","[
+  {
+    identity: 17,
+    labels: [Variable],
+    properties: {
+      unit: business_days,
+      evidence: Contractor shall notify VCU of any data breach within ten (10) business days.,
+      clause_key: MASTER SERVICES AGREEMENT:::7,
+      confidence: 1.0,
+      name: remediation_sla_bd,
+      type: int,
+      value: 10
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:17
+  }
+]",[]
+"(:Agreement {agreement_id: MASTER SERVICES AGREEMENT, name: MASTER SERVICES AGREEMENT, type: Master Service Agreement, auto_renewal: false})","(:Clause {excerpts: [], draft_p25_delta: [], obligor: Contractor, title: Data Protection Compliance, external_inference_used: false, clause_order: 3, right_holder: Contractor, confidence_overall: 0.0, dependencies: [], agreement_id: MASTER SERVICES AGREEMENT, clause_id: 8, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: C0003310})",[],[]
+"(:Agreement {agreement_id: MASTER SERVICES AGREEMENT, name: MASTER SERVICES AGREEMENT, type: Master Service Agreement, auto_renewal: false})","(:Clause {excerpts: [], draft_p25_delta: [], obligor: Contractor, title: Technical & Organisational Measures, external_inference_used: false, clause_order: 4, right_holder: Contractor, confidence_overall: 0.0, dependencies: [], agreement_id: MASTER SERVICES AGREEMENT, clause_id: 9, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: C0003310})",[],[]
+"(:Agreement {agreement_id: MASTER SERVICES AGREEMENT, name: MASTER SERVICES AGREEMENT, type: Master Service Agreement, auto_renewal: false})","(:Clause {excerpts: [], draft_p25_delta: [], obligor: Contractor, title: Marketing & Promotion, external_inference_used: false, clause_order: 3, right_holder: Each Party, confidence_overall: 0.0, dependencies: [], agreement_id: MASTER SERVICES AGREEMENT, clause_id: 10, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: C0003310})",[],[]
+"(:Agreement {agreement_id: MASTER SERVICES AGREEMENT, name: MASTER SERVICES AGREEMENT, type: Master Service Agreement, auto_renewal: false})","(:Clause {excerpts: [Contractor shall be liable for the direct damages caused by the negligence of itself, its officers, employees, and agents in connection with this Contract or any goods, services, actions, or omissions relating to this Contract.], draft_p25_delta: [], obligor: Contractor, title: Limitation of Liability, external_inference_used: false, clause_order: 1, right_holder: Each Party, confidence_overall: 1.0, dependencies: [], agreement_id: MASTER SERVICES AGREEMENT, clause_id: 4, defaults_applied: [], draft_p75_delta: [], page_refs: [4], source_document_id: C0003310})","[
+  {
+    identity: 54,
+    labels: [Variable],
+    properties: {
+      unit: n/a,
+      evidence: Contractor shall be liable for the direct damages caused by the negligence of itself, its officers, employees, and agents in connection with this Contract or any goods, services, actions, or omissions relating to this Contract.,
+      clause_key: MASTER SERVICES AGREEMENT:::4,
+      confidence: 1.0,
+      name: liability_cap,
+      type: bool,
+      value: true
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:54
+  }
+]",[]
+"(:Agreement {agreement_id: MASTER SERVICES AGREEMENT, name: MASTER SERVICES AGREEMENT, type: Master Service Agreement, auto_renewal: false})","(:Clause {excerpts: [Contractor agrees to indemnify, defend, and hold harmless VCU, the Commonwealth of Virginia, and their officers, employees and agents from any claim, damage, liability, injury, expense or loss, including defense costs and attorneys’ fees, arising from Contractor’s negligence under this Agreement.], draft_p25_delta: [], obligor: Roof Systems of VA, Inc., title: Indemnification, external_inference_used: false, clause_order: 2, right_holder: Virginia Commonwealth University, confidence_overall: 1.0, dependencies: [], agreement_id: MASTER SERVICES AGREEMENT, clause_id: 5, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: C0003175})",[],[]
+"(:Agreement {agreement_id: MASTER SERVICES AGREEMENT, name: MASTER SERVICES AGREEMENT, type: Master Service Agreement, auto_renewal: false})","(:Clause {excerpts: [You may use our Confidential Information only for the purposes of this agreement; and must keep confidential all Confidential Information except for disclosures permitted under this clause 14; and to the extent (if any) you are required to disclose any Confidential Information by Law or in accordance with the rules of an applicable stock exchange., On the termination of this Agreement for any reason, you must return the Confidential Information and all copies of it to us.], draft_p25_delta: [], obligor: Each Party, title: Confidentiality, external_inference_used: false, clause_order: 1, right_holder: Each Party, confidence_overall: 0.0, dependencies: [], agreement_id: MASTER SERVICES AGREEMENT, clause_id: 14, defaults_applied: [], draft_p75_delta: [], draft_p50_full: You must return the Confidential Information and all copies of it to us., page_refs: [], source_document_id: Comms Group Global MSA V1.0 December 2022})","[
+  {
+    identity: 84,
+    labels: [Variable],
+    properties: {
+      unit: n/a,
+      evidence: You must return the Confidential Information and all copies of it to us.,
+      clause_key: MASTER SERVICES AGREEMENT:::14,
+      confidence: 0.0,
+      name: ci_return_sla_bd,
+      type: int
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:84
+  }
+]",[]
+"(:Agreement {agreement_id: MASTER SERVICES AGREEMENT, name: MASTER SERVICES AGREEMENT, type: Master Service Agreement, auto_renewal: false})","(:Clause {excerpts: [You indemnify and will keep us and our Affiliates indemnified against any loss, cost, expense, damage or other liability (including legal costs on a solicitor/client basis) (Loss) arising out of: your breach of this Agreement; any claim or demand against us (including for negligence) by any person other than you, which arises from or is connected with your use of the Services or Equipment.], draft_p25_delta: [], obligor: Customer, title: Indemnity, external_inference_used: false, clause_order: 2, right_holder: Comms Group, confidence_overall: 0.0, dependencies: [], agreement_id: MASTER SERVICES AGREEMENT, clause_id: 21, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: Comms Group Global MSA V1.0 December 2022})",[],[]
+"(:Agreement {agreement_id: Master Services Agreement, agreement_date: 2023-04-18, name: Master Services Agreement, effective_date: 2023-04-18, renewal_term: up to two additional two-year terms, type: Master Service Agreement, expiration_date: 2024-08-31, auto_renewal: false, notice_period_to_terminate_renewal: 30 days})","(:Clause {excerpts: [], draft_p25_delta: [], obligor: Each Party, title: Confidentiality, external_inference_used: false, clause_order: 2, right_holder: Each Party, confidence_overall: 0.0, dependencies: [], agreement_id: Master Services Agreement, clause_id: 6, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: contract_1})",[],[]
+"(:Agreement {agreement_id: Master Services Agreement, agreement_date: 2023-04-18, name: Master Services Agreement, effective_date: 2023-04-18, renewal_term: up to two additional two-year terms, type: Master Service Agreement, expiration_date: 2024-08-31, auto_renewal: false, notice_period_to_terminate_renewal: 30 days})","(:Clause {excerpts: [], draft_p25_delta: [], obligor: Each Party, title: Data Breach Notification, external_inference_used: false, clause_order: 3, right_holder: Each Party, confidence_overall: 0.0, dependencies: [], agreement_id: Master Services Agreement, clause_id: 7, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: contract_1})",[],[]
+"(:Agreement {agreement_id: Master Services Agreement, agreement_date: 2023-04-18, name: Master Services Agreement, effective_date: 2023-04-18, renewal_term: up to two additional two-year terms, type: Master Service Agreement, expiration_date: 2024-08-31, auto_renewal: false, notice_period_to_terminate_renewal: 30 days})","(:Clause {excerpts: [], draft_p25_delta: [], obligor: Each Party, title: Data Protection Compliance, external_inference_used: false, clause_order: 4, right_holder: Each Party, confidence_overall: 0.0, dependencies: [], agreement_id: Master Services Agreement, clause_id: 8, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: contract_1})",[],[]
+"(:Agreement {agreement_id: Master Services Agreement, agreement_date: 2023-04-18, name: Master Services Agreement, effective_date: 2023-04-18, renewal_term: up to two additional two-year terms, type: Master Service Agreement, expiration_date: 2024-08-31, auto_renewal: false, notice_period_to_terminate_renewal: 30 days})","(:Clause {excerpts: [], draft_p25_delta: [], obligor: Each Party, title: Technical & Organisational Measures, external_inference_used: false, clause_order: 5, right_holder: Each Party, confidence_overall: 0.0, dependencies: [], agreement_id: Master Services Agreement, clause_id: 9, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: contract_1})",[],[]
+"(:Agreement {agreement_id: Master Services Agreement, agreement_date: 2023-04-18, name: Master Services Agreement, effective_date: 2023-04-18, renewal_term: up to two additional two-year terms, type: Master Service Agreement, expiration_date: 2024-08-31, auto_renewal: false, notice_period_to_terminate_renewal: 30 days})","(:Clause {excerpts: [], draft_p25_delta: [], obligor: Each Party, title: Marketing & Promotion, external_inference_used: false, clause_order: 6, right_holder: Each Party, confidence_overall: 0.0, dependencies: [], agreement_id: Master Services Agreement, clause_id: 10, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: contract_1})",[],[]
+"(:Agreement {agreement_id: Master Services Agreement, agreement_date: 2023-04-18, name: Master Services Agreement, effective_date: 2023-04-18, renewal_term: up to two additional two-year terms, type: Master Service Agreement, expiration_date: 2024-08-31, auto_renewal: false, notice_period_to_terminate_renewal: 30 days})","(:Clause {excerpts: [A. Default of Respondent – A&M System shall have the right to terminate this Agreement without penalty after a 15-day written notice of termination in the event: a. PROVIDER disregards or violates material provisions of this Agreement or A&M System instructions; or fails to execute the work of a specific engagement according to the agreed upon schedule of completion and/or time of completion specified, including extensions thereof, or fails to reach agreed upon performance results. b. PROVIDER declares bankruptcy, becomes insolvent, or assigns company assets for the benefit of creditors., B. For Convenience – A&M System shall have the right to terminate this Agreement at any time upon thirty (30) days prior notice to PROVIDER.], draft_p25_delta: [], obligor: PROVIDER, title: Default and Termination, external_inference_used: false, clause_order: 1, right_holder: A&M System, confidence_overall: 0.0, dependencies: [], agreement_id: Master Services Agreement, clause_id: 4, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: contract_1})",[],[]
+"(:Agreement {agreement_id: Master Services Agreement, agreement_date: 2023-04-18, name: Master Services Agreement, effective_date: 2023-04-18, renewal_term: up to two additional two-year terms, type: Master Service Agreement, expiration_date: 2024-08-31, auto_renewal: false, notice_period_to_terminate_renewal: 30 days})","(:Clause {excerpts: [A&M System may terminate this MSA at any time upon thirty (30) days prior notice to Provider.], draft_p25_delta: [], obligor: Provider, title: Termination for Convenience, external_inference_used: false, clause_order: 2, right_holder: A&M System, confidence_overall: 1.0, dependencies: [], agreement_id: Master Services Agreement, clause_id: 5, defaults_applied: [], draft_p75_delta: [], page_refs: [1], source_document_id: contract_001})",[],[]
+"(:Agreement {agreement_id: Executed.pdf.json, name: Executed.pdf.json})","(:Clause {excerpts: [In no event shall either party be liable for special, consequential, incidental, indirect or punitive loss, damages or expenses arising out of or relating to this Agreement, whether arising from a breach of contract or warranty, or arising in tort, strict liability, by statute or otherwise, even if it has been advised of their possible existence or if such loss, damages or expenses were reasonably foreseeable.], draft_p25_delta: [], obligor: Each Party, title: Limitation of Liability, external_inference_used: false, clause_order: 2, right_holder: Each Party, confidence_overall: 1.0, dependencies: [], agreement_id: Executed.pdf.json, clause_id: 1, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: 2023-069})","[
+  {
+    identity: 32,
+    labels: [Variable],
+    properties: {
+      evidence: Contractor shall defend, indemnify, and hold harmless NCTCOG and Participating Entities, NCTCOG’s affiliates, and any of their respective directors, officers, employees, agents, subcontractors, successors, and assigns from any and all suits, actions, claims, demands, judgments, liabilities, losses, damages, costs, and expenses (including reasonable attorneys’ fees and court costs) (collectively, “Losses”) arising out of or relating to: (i) Services performed and carried out pursuant to this Agreement; (ii) breach of any obligation, warranty, or representation in this Agreement, (iii) the negligence or willful misconduct of Contractor and/or its employees or subcontractors; or (iv) any infringement, misappropriation, or violation by Contractor and/or its employees or subcontractors of any right of a third party; provided, however, that Contractor shall have no obligation to defend, indemnify, or hold harmless to the extent any Losses are the result of NCTCOG’s or Participating Entities’ gross negligence or willful misconduct.,
+      clause_key: Executed.pdf.json:::1,
+      confidence: 1.0,
+      name: indemnification_scope,
+      type: string,
+      value: Contractor shall defend, indemnify, and hold harmless NCTCOG and Participating Entities, NCTCOG’s affiliates, and any of their respective directors, officers, employees, agents, subcontractors, successors, and assigns from any and all suits, actions, claims, demands, judgments, liabilities, losses, damages, costs, and expenses (including reasonable attorneys’ fees and court costs) (collectively, “Losses”) arising out of or relating to: (i) Services performed and carried out pursuant to this Agreement; (ii) breach of any obligation, warranty, or representation in this Agreement, (iii) the negligence or willful misconduct of Contractor and/or its employees or subcontractors; or (iv) any infringement, misappropriation, or violation by Contractor and/or its employees or subcontractors of any right of a third party; provided, however, that Contractor shall have no obligation to defend, indemnify, or hold harmless to the extent any Losses are the result of NCTCOG’s or Participating Entities’ gross negligence or willful misconduct.
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:32
+  },
+  {
+    identity: 33,
+    labels: [Variable],
+    properties: {
+      evidence: In no event shall either party be liable for special, consequential, incidental, indirect or punitive loss, damages or expenses arising out of or relating to this Agreement, whether arising from a breach of contract or warranty, or arising in tort, strict liability, by statute or otherwise, even if it has been advised of their possible existence or if such loss, damages or expenses were reasonably foreseeable.,
+      clause_key: Executed.pdf.json:::1,
+      confidence: 1.0,
+      name: liability_cap,
+      type: bool,
+      value: false
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:33
+  }
+]",[]
+"(:Agreement {agreement_id: Executed.pdf.json, name: Executed.pdf.json})","(:Clause {excerpts: [Contractor acknowledges that any information it or its employees, agents, or subcontractors obtain regarding the operation of NCTCOG or Participating Entities, its products, services, policies, customer, personnel, and other aspect of its operation (“Confidential Information”) is proprietary and confidential, and shall not be revealed, sold, exchanged, traded, or disclosed to any person, company, or other entity during the period of the Contractor’s retention hereunder or at any time thereafter without the express written permission of NCTCOG or Participating Entity.], draft_p25_delta: [], obligor: Contractor, title: Confidential Information, external_inference_used: false, clause_order: 3, right_holder: NCTCOG, confidence_overall: 1.0, dependencies: [], agreement_id: Executed.pdf.json, clause_id: 2, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: 2023-069})","[
+  {
+    identity: 35,
+    labels: [Variable],
+    properties: {
+      evidence: Contractor acknowledges that any information it or its employees, agents, or subcontractors obtain regarding the operation of NCTCOG or Participating Entities, its products, services, policies, customer, personnel, and other aspect of its operation (“Confidential Information”) is proprietary and confidential, and shall not be revealed, sold, exchanged, traded, or disclosed to any person, company, or other entity during the period of the Contractor’s retention hereunder or at any time thereafter without the express written permission of NCTCOG or Participating Entity.,
+      clause_key: Executed.pdf.json:::2,
+      confidence: 1.0,
+      name: confidentiality_duration,
+      type: string,
+      value: during the period of the Contractor’s retention hereunder or at any time thereafter
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:35
+  }
+]",[]
+"(:Agreement {agreement_id: Amended and Restated Master Services Agreement, agreement_date: 2019-11-21, name: Amended and Restated Master Services Agreement, effective_date: 2019-11-21, renewal_term: one year, type: Master Services Agreement, auto_renewal: true, notice_period_to_terminate_renewal: 90 calendar days})","(:Clause {excerpts: [6.4 The parties acknowledge and agree that conducting the activities and providing the Services contemplated herein may have the incidental eﬀect of providing additional information which may be utilized with respect to, or may augment the value of, business interests and related assets in which any Service Provider or any of its Aﬃliates has an interest and that, subject to compliance with this Agreement, none of the Service Providers or any of their respective Aﬃliates will be liable to account to the Service Recipients with respect to such activities or results.], draft_p25_delta: [], obligor: Each Party, title: Confidentiality, external_inference_used: false, clause_order: 1, right_holder: Each Party, confidence_overall: 1.0, dependencies: [], agreement_id: Amended and Restated Master Services Agreement, clause_id: 1, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: Exhibit 99.3})","[
+  {
+    identity: 39,
+    labels: [Variable],
+    properties: {
+      unit: business_days,
+      evidence: The relevant member of the Manager Group will release such money or other property to the Service Recipient within a reasonable period of time, but in no event later than 60 days following such request.,
+      clause_key: Amended and Restated Master Services Agreement:::1,
+      confidence: 1.0,
+      name: ci_return_sla_bd,
+      type: int,
+      value: 60
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:39
+  }
+]",[]
+"(:Agreement {agreement_id: Amended and Restated Master Services Agreement, agreement_date: 2019-11-21, name: Amended and Restated Master Services Agreement, effective_date: 2019-11-21, renewal_term: one year, type: Master Services Agreement, auto_renewal: true, notice_period_to_terminate_renewal: 90 calendar days})","(:Clause {excerpts: [USBFS shall exercise reasonable care in the performance of its duties under this Agreement. USBFS shall not be liable for any error of judgment or mistake of law or for any loss suffered by the Adviser and the Funds in connection with matters to which this Agreement relates, including losses resulting from mechanical breakdowns or the failure of communication or power supplies beyond USBFS’s control, except a loss arising out of or relating to USBFS’s refusal or failure to comply with the terms of this Agreement or from bad faith, negligence, or willful misconduct on its part in the performance of its duties under this Agreement.], draft_p25_delta: [], obligor: Each Party, title: Indemnification; Limitation of Liability, external_inference_used: false, clause_order: 1, right_holder: Each Party, confidence_overall: 1.0, dependencies: [], agreement_id: Amended and Restated Master Services Agreement, clause_id: 3, defaults_applied: [], draft_p75_delta: [], draft_p50_full: USBFS shall exercise reasonable care in the performance of its duties under this Agreement. USBFS shall not be liable for any error of judgment or mistake of law or for any loss suffered by the Adviser and the Funds in connection with matters to which this Agreement relates, including losses resulting from mechanical breakdowns or the failure of communication or power supplies beyond USBFS’s control, except a loss arising out of or relating to USBFS’s refusal or failure to comply with the terms of this Agreement or from bad faith, negligence, or willful misconduct on its part in the performance of its duties under this Agreement., page_refs: [], source_document_id: contract_001})","[
+  {
+    identity: 107,
+    labels: [Variable],
+    properties: {
+      unit: n/a,
+      evidence: USBFS shall exercise reasonable care in the performance of its duties under this Agreement. USBFS shall not be liable for any error of judgment or mistake of law or for any loss suffered by the Adviser and the Funds in connection with matters to which this Agreement relates, including losses resulting from mechanical breakdowns or the failure of communication or power supplies beyond USBFS’s control, except a loss arising out of or relating to USBFS’s refusal or failure to comply with the terms of this Agreement or from bad faith, negligence, or willful misconduct on its part in the performance of its duties under this Agreement.,
+      clause_key: Amended and Restated Master Services Agreement:::3,
+      confidence: 1.0,
+      name: liability_cap,
+      type: bool,
+      value: false
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:107
+  }
+]",[]
+"(:Agreement {agreement_id: Amended and Restated Master Services Agreement, agreement_date: 2019-11-21, name: Amended and Restated Master Services Agreement, effective_date: 2019-11-21, renewal_term: one year, type: Master Services Agreement, auto_renewal: true, notice_period_to_terminate_renewal: 90 calendar days})","(:Clause {excerpts: [USBFS agrees on behalf of itself and its directors, officers, and employees to treat confidentially and as proprietary information of the Funds all records and other information relative to the Funds and prior, present, or potential shareholders of the Funds (and clients of said shareholders), and not to use such records and information for any purpose other than the performance of its responsibilities and duties hereunder, except after prior notification to and approval in writing by the Funds, which approval shall not be unreasonably withheld and may not be withheld where USBFS may be exposed to civil or criminal contempt proceedings for failure to comply, when requested to divulge such information by duly constituted authorities, or when so requested by the Adviser or the Funds.], draft_p25_delta: [], obligor: Each Party, title: Proprietary and Confidential Information, external_inference_used: false, clause_order: 2, right_holder: Each Party, confidence_overall: 1.0, dependencies: [], agreement_id: Amended and Restated Master Services Agreement, clause_id: 4, defaults_applied: [], draft_p75_delta: [], draft_p50_full: USBFS agrees on behalf of itself and its directors, officers, and employees to treat confidentially and as proprietary information of the Funds all records and other information relative to the Funds and prior, present, or potential shareholders of the Funds (and clients of said shareholders), and not to use such records and information for any purpose other than the performance of its responsibilities and duties hereunder, except after prior notification to and approval in writing by the Funds, which approval shall not be unreasonably withheld and may not be withheld where USBFS may be exposed to civil or criminal contempt proceedings for failure to comply, when requested to divulge such information by duly constituted authorities, or when so requested by the Adviser or the Funds., page_refs: [], source_document_id: contract_001})",[],[]
+"(:Agreement {agreement_id: Amended and Restated Master Services Agreement, agreement_date: 2019-11-21, name: Amended and Restated Master Services Agreement, effective_date: 2019-11-21, renewal_term: one year, type: Master Services Agreement, auto_renewal: true, notice_period_to_terminate_renewal: 90 calendar days})","(:Clause {excerpts: [This Agreement shall become effective as of the date first written above and will continue in effect for a period of one (1) year (the “Initial Term”). Subsequent to the Initial Term, this Agreement shall renew automatically for subsequent one-year periods.], draft_p25_delta: [], obligor: Each Party, title: Term of Agreement, external_inference_used: false, clause_order: 3, right_holder: Each Party, confidence_overall: 1.0, dependencies: [], agreement_id: Amended and Restated Master Services Agreement, clause_id: 5, defaults_applied: [], draft_p75_delta: [], draft_p50_full: This Agreement shall become effective as of the date first written above and will continue in effect for a period of one (1) year (the “Initial Term”). Subsequent to the Initial Term, this Agreement shall renew automatically for subsequent one-year periods., page_refs: [], source_document_id: contract_001})",[],[]
+"(:Agreement {agreement_id: Amended and Restated Master Services Agreement, agreement_date: 2019-11-21, name: Amended and Restated Master Services Agreement, effective_date: 2019-11-21, renewal_term: one year, type: Master Services Agreement, auto_renewal: true, notice_period_to_terminate_renewal: 90 calendar days})","(:Clause {excerpts: [After the Initial Term, this Agreement may be terminated by either party upon giving ninety (90) calendar days prior written notice to the other party or such shorter period as is mutually agreed upon by the parties (a “Regular Termination”). This Agreement may be terminated for cause at any time upon a party’s failure to cure a material breach. In such an instance, the party alleging material breach shall provide to the other party detailed notice identifying the breach and giving twenty (20) business days to cure.], draft_p25_delta: [], obligor: Each Party, title: Termination, external_inference_used: false, clause_order: 4, right_holder: Each Party, confidence_overall: 1.0, dependencies: [], agreement_id: Amended and Restated Master Services Agreement, clause_id: 6, defaults_applied: [], draft_p75_delta: [], draft_p50_full: After the Initial Term, this Agreement may be terminated by either party upon giving ninety (90) calendar days prior written notice to the other party or such shorter period as is mutually agreed upon by the parties (a “Regular Termination”). This Agreement may be terminated for cause at any time upon a party’s failure to cure a material breach. In such an instance, the party alleging material breach shall provide to the other party detailed notice identifying the breach and giving twenty (20) business days to cure., page_refs: [], source_document_id: contract_001})",[],[]
+"(:Agreement {agreement_id: Amended and Restated Master Services Agreement, agreement_date: 2019-11-21, name: Amended and Restated Master Services Agreement, effective_date: 2019-11-21, renewal_term: one year, type: Master Services Agreement, auto_renewal: true, notice_period_to_terminate_renewal: 90 calendar days})","(:Clause {excerpts: [USBFS and the Adviser agree that, should a dispute arise with respect to an obligation under this Agreement, they will negotiate resolution in good faith and that they will continue to conduct business as usual to the extent reasonably possible. Should the parties not be able to achieve resolution themselves, they will submit the dispute to binding arbitration under the rules of the American Arbitration Association at an agreed upon venue.], draft_p25_delta: [], obligor: Each Party, title: Dispute Resolution, external_inference_used: false, clause_order: 5, right_holder: Each Party, confidence_overall: 1.0, dependencies: [], agreement_id: Amended and Restated Master Services Agreement, clause_id: 14, defaults_applied: [], draft_p75_delta: [], draft_p50_full: USBFS and the Adviser agree that, should a dispute arise with respect to an obligation under this Agreement, they will negotiate resolution in good faith and that they will continue to conduct business as usual to the extent reasonably possible. Should the parties not be able to achieve resolution themselves, they will submit the dispute to binding arbitration under the rules of the American Arbitration Association at an agreed upon venue., page_refs: [], source_document_id: contract_001})",[],[]
+"(:Agreement {agreement_id: MASTER SERVICES AGREEMENT #2023-069, agreement_date: 2024-04-02, name: MASTER SERVICES AGREEMENT #2023-069, effective_date: 2024-04-02, renewal_term: up to four (4) additional one (1) year terms, type: Master Services Agreement, expiration_date: 2029-01-30, auto_renewal: true, notice_period_to_terminate_renewal: 30 days})","(:Clause {excerpts: [In no event shall either party be liable for special, consequential, incidental, indirect or punitive loss, damages or expenses arising out of or relating to this Agreement, whether arising from a breach of contract or warranty, or arising in tort, strict liability, by statute or otherwise, even if it has been advised of their possible existence or if such loss, damages or expenses were reasonably foreseeable.], draft_p25_delta: [], obligor: Each Party, title: Limitation of Liability, external_inference_used: false, clause_order: 1, right_holder: Each Party, confidence_overall: 1.0, dependencies: [], agreement_id: MASTER SERVICES AGREEMENT #2023-069, clause_id: 4, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: 2023-069})","[
+  {
+    identity: 45,
+    labels: [Variable],
+    properties: {
+      unit: n/a,
+      evidence: In no event shall either party be liable for special, consequential, incidental, indirect or punitive loss, damages or expenses arising out of or relating to this Agreement, whether arising from a breach of contract or warranty, or arising in tort, strict liability, by statute or otherwise, even if it has been advised of their possible existence or if such loss, damages or expenses were reasonably foreseeable.,
+      clause_key: MASTER SERVICES AGREEMENT #2023-069:::4,
+      confidence: 1.0,
+      name: liability_cap,
+      type: bool,
+      value: false
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:45
+  }
+]",[]
+"(:Agreement {agreement_id: MASTER SERVICES AGREEMENT #2023-069, agreement_date: 2024-04-02, name: MASTER SERVICES AGREEMENT #2023-069, effective_date: 2024-04-02, renewal_term: up to four (4) additional one (1) year terms, type: Master Services Agreement, expiration_date: 2029-01-30, auto_renewal: true, notice_period_to_terminate_renewal: 30 days})","(:Clause {excerpts: [Contractor shall defend, indemnify, and hold harmless NCTCOG and Participating Entities, NCTCOG’s affiliates, and any of their respective directors, officers, employees, agents, subcontractors, successors, and assigns from any and all suits, actions, claims, demands, judgments, liabilities, losses, damages, costs, and expenses (including reasonable attorneys’ fees and court costs) (collectively, “Losses”) arising out of or relating to: (i) Services performed and carried out pursuant to this Agreement; (ii) breach of any obligation, warranty, or representation in this Agreement, (iii) the negligence or willful misconduct of Contractor and/or its employees or subcontractors; or (iv) any infringement, misappropriation, or violation by Contractor and/or its employees or subcontractors of any right of a third party; provided, however, that Contractor shall have no obligation to defend, indemnify, or hold harmless to the extent any Losses are the result of NCTCOG’s or Participating Entities’ gross negligence or willful misconduct.], draft_p25_delta: [], obligor: Contractor, title: Indemnification, external_inference_used: false, clause_order: 2, right_holder: NCTCOG, confidence_overall: 1.0, dependencies: [], agreement_id: MASTER SERVICES AGREEMENT #2023-069, clause_id: 9, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: 2023-069})",[],[]
+"(:Agreement {agreement_id: MASTER SERVICES AGREEMENT #2023-069, agreement_date: 2024-04-02, name: MASTER SERVICES AGREEMENT #2023-069, effective_date: 2024-04-02, renewal_term: up to four (4) additional one (1) year terms, type: Master Services Agreement, expiration_date: 2029-01-30, auto_renewal: true, notice_period_to_terminate_renewal: 30 days})","(:Clause {excerpts: [Contractor acknowledges that any information it or its employees, agents, or subcontractors obtain regarding the operation of NCTCOG or Participating Entities, its products, services, policies, customer, personnel, and other aspect of its operation (“Confidential Information”) is proprietary and confidential, and shall not be revealed, sold, exchanged, traded, or disclosed to any person, company, or other entity during the period of the Contractor’s retention hereunder or at any time thereafter without the express written permission of NCTCOG or Participating Entity.], draft_p25_delta: [], obligor: Contractor, title: Confidentiality, external_inference_used: false, clause_order: 3, right_holder: Each Party, confidence_overall: 0.5, dependencies: [], agreement_id: MASTER SERVICES AGREEMENT #2023-069, clause_id: 6, defaults_applied: [ci_return_sla_bd: no numeric SLA provided], draft_p75_delta: [], page_refs: [], source_document_id: 2023-069})","[
+  {
+    identity: 48,
+    labels: [Variable],
+    properties: {
+      unit: n/a,
+      evidence: Contractor acknowledges that any information it or its employees, agents, or subcontractors obtain regarding the operation of NCTCOG or Participating Entities, its products, services, policies, customer, personnel, and other aspect of its operation (“Confidential Information”) is proprietary and confidential, and shall not be revealed, sold, exchanged, traded, or disclosed to any person, company, or other entity during the period of the Contractor’s retention hereunder or at any time thereafter without the express written permission of NCTCOG or Participating Entity.,
+      clause_key: MASTER SERVICES AGREEMENT #2023-069:::6,
+      confidence: 0.5,
+      name: ci_return_sla_bd,
+      type: int
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:48
+  }
+]",[]
+"(:Agreement {agreement_id: AMENDED AND RESTATED MASTER SERVICES AGREEMENT, agreement_date: 2013-08-08, contract_currency: USD, name: AMENDED AND RESTATED MASTER SERVICES AGREEMENT, effective_date: 2013-08-08, type: Master Services Agreement, auto_renewal: true, total_contract_value: 50000000})","(:Clause {excerpts: [10.2.1 The Managers assume no responsibility under this Agreement other than to render the Services in good faith and will not be responsible for any action of a Service Recipient’s Governing Body in following or declining to follow any advice or recommendations of the relevant Service Provider, including as set forth in Section 3.2 hereof.], draft_p25_delta: [], obligor: Indemnifying Party, title: Limitation of Liability, external_inference_used: false, clause_order: 2, right_holder: Indemniﬁed Party, confidence_overall: 0.0, dependencies: [], agreement_id: AMENDED AND RESTATED MASTER SERVICES AGREEMENT, clause_id: 10, defaults_applied: [], draft_p75_delta: []})","[
+  {
+    identity: 96,
+    labels: [Variable],
+    properties: {
+      unit: USD,
+      evidence: 10.2.3 The maximum amount of the aggregate liability of the Indemniﬁed Parties pursuant to this Agreement will be equal to the amounts previously paid in respect of Services pursuant to this Agreement in the two most recent calendar years by the Service Recipients pursuant to Article 7.,
+      clause_key: AMENDED AND RESTATED MASTER SERVICES AGREEMENT:::10,
+      confidence: 1.0,
+      name: cap_amount,
+      type: int,
+      value: 100000000
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:96
+  },
+  {
+    identity: 97,
+    labels: [Variable],
+    properties: {
+      evidence: 10.2.3 The maximum amount of the aggregate liability of the Indemniﬁed Parties pursuant to this Agreement will be equal to the amounts previously paid in respect of Services pursuant to this Agreement in the two most recent calendar years by the Service Recipients pursuant to Article 7.,
+      clause_key: AMENDED AND RESTATED MASTER SERVICES AGREEMENT:::10,
+      confidence: 1.0,
+      name: cap_type,
+      type: string,
+      value: aggregate
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:97
+  },
+  {
+    identity: 98,
+    labels: [Variable],
+    properties: {
+      evidence: 10.2.3 The maximum amount of the aggregate liability of the Indemniﬁed Parties pursuant to this Agreement will be equal to the amounts previously paid in respect of Services pursuant to this Agreement in the two most recent calendar years by the Service Recipients pursuant to Article 7.,
+      clause_key: AMENDED AND RESTATED MASTER SERVICES AGREEMENT:::10,
+      confidence: 1.0,
+      name: cap_calculation,
+      type: string,
+      value: amounts previously paid in respect of Services
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:98
+  },
+  {
+    identity: 99,
+    labels: [Variable],
+    properties: {
+      evidence: 10.2.3 The maximum amount of the aggregate liability of the Indemniﬁed Parties pursuant to this Agreement will be equal to the amounts previously paid in respect of Services pursuant to this Agreement in the two most recent calendar years by the Service Recipients pursuant to Article 7.,
+      clause_key: AMENDED AND RESTATED MASTER SERVICES AGREEMENT:::10,
+      confidence: 1.0,
+      name: cap_party,
+      type: string,
+      value: Indemniﬁed Parties
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:99
+  },
+  {
+    identity: 100,
+    labels: [Variable],
+    properties: {
+      evidence: 10.2.2 The Service Recipients hereby agree that no Indemniﬁed Party will be liable to a Service Recipient, a Service Recipient’s Governing Body (including, for greater certainty, a director or oﬃcer of a Service Recipient or another individual with similar function or capacity) or any security holder or partner of a Service Recipient for any Liabilities that may occur as a result of any acts or omissions by the Indemniﬁed Party pursuant to or in accordance with this Agreement, except to the extent that such Liabilities are ﬁnally determined by a ﬁnal and non-appealable judgment entered by a court of competent jurisdiction to have resulted from the Indemniﬁed Party’s bad faith, fraud, wilful misconduct, gross negligence, or in the case of a criminal matter, conduct undertaken with knowledge that the conduct was unlawful.,
+      clause_key: AMENDED AND RESTATED MASTER SERVICES AGREEMENT:::10,
+      confidence: 1.0,
+      name: carve_outs,
+      type: array,
+      value: [bad faith, fraud, wilful misconduct, gross negligence]
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:100
+  }
+]",[]
+"(:Agreement {agreement_id: AMENDED AND RESTATED MASTER SERVICES AGREEMENT, agreement_date: 2013-08-08, contract_currency: USD, name: AMENDED AND RESTATED MASTER SERVICES AGREEMENT, effective_date: 2013-08-08, type: Master Services Agreement, auto_renewal: true, total_contract_value: 50000000})","(:Clause {excerpts: [11.1 Term This Agreement will continue in full force and eﬀect, in perpetuity, until terminated in accordance with Section 11.2 or Section 11.3.], draft_p25_delta: [], obligor: Each Party, title: Term and Termination, external_inference_used: false, clause_order: 3, right_holder: Each Party, confidence_overall: 0.0, dependencies: [], agreement_id: AMENDED AND RESTATED MASTER SERVICES AGREEMENT, clause_id: 11, defaults_applied: [], draft_p75_delta: []})",[],[]
+"(:Agreement {agreement_id: LOAN AGREEMENT, agreement_date: 2002-12-31, contract_currency: USD, name: LOAN AGREEMENT, effective_date: 2002-12-31, renewal_term: 1 year, type: Loan Agreement, auto_renewal: true, notice_period_to_terminate_renewal: 6 months, total_contract_value: 20000000})","(:Clause {excerpts: [], draft_p25_delta: [], obligor: Each Party, title: Limitation of Liability, external_inference_used: false, clause_order: 1, right_holder: Each Party, confidence_overall: 0.0, dependencies: [], agreement_id: LOAN AGREEMENT, clause_id: 1, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: Loan Agreement})",[],[]
+"(:Agreement {agreement_id: LOAN AGREEMENT, agreement_date: 2002-12-31, contract_currency: USD, name: LOAN AGREEMENT, effective_date: 2002-12-31, renewal_term: 1 year, type: Loan Agreement, auto_renewal: true, notice_period_to_terminate_renewal: 6 months, total_contract_value: 20000000})","(:Clause {excerpts: [], draft_p25_delta: [], obligor: Each Party, title: Confidentiality, external_inference_used: false, clause_order: 2, right_holder: Each Party, confidence_overall: 0.0, dependencies: [], agreement_id: LOAN AGREEMENT, clause_id: 6, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: Loan Agreement})",[],[]
+"(:Agreement {agreement_id: LOAN AGREEMENT, agreement_date: 2002-12-31, contract_currency: USD, name: LOAN AGREEMENT, effective_date: 2002-12-31, renewal_term: 1 year, type: Loan Agreement, auto_renewal: true, notice_period_to_terminate_renewal: 6 months, total_contract_value: 20000000})","(:Clause {excerpts: [], draft_p25_delta: [], obligor: Each Party, title: Data Breach Notification, external_inference_used: false, clause_order: 3, right_holder: Each Party, confidence_overall: 0.0, dependencies: [], agreement_id: LOAN AGREEMENT, clause_id: 7, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: Loan Agreement})",[],[]
+"(:Agreement {agreement_id: LOAN AGREEMENT, agreement_date: 2002-12-31, contract_currency: USD, name: LOAN AGREEMENT, effective_date: 2002-12-31, renewal_term: 1 year, type: Loan Agreement, auto_renewal: true, notice_period_to_terminate_renewal: 6 months, total_contract_value: 20000000})","(:Clause {excerpts: [], draft_p25_delta: [], obligor: Each Party, title: Data Protection Compliance, external_inference_used: false, clause_order: 4, right_holder: Each Party, confidence_overall: 0.0, dependencies: [], agreement_id: LOAN AGREEMENT, clause_id: 8, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: Loan Agreement})",[],[]
+"(:Agreement {agreement_id: LOAN AGREEMENT, agreement_date: 2002-12-31, contract_currency: USD, name: LOAN AGREEMENT, effective_date: 2002-12-31, renewal_term: 1 year, type: Loan Agreement, auto_renewal: true, notice_period_to_terminate_renewal: 6 months, total_contract_value: 20000000})","(:Clause {excerpts: [], draft_p25_delta: [], obligor: Each Party, title: Technical & Organisational Measures, external_inference_used: false, clause_order: 5, right_holder: Each Party, confidence_overall: 0.0, dependencies: [], agreement_id: LOAN AGREEMENT, clause_id: 9, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: Loan Agreement})",[],[]
+"(:Agreement {agreement_id: LOAN AGREEMENT, agreement_date: 2002-12-31, contract_currency: USD, name: LOAN AGREEMENT, effective_date: 2002-12-31, renewal_term: 1 year, type: Loan Agreement, auto_renewal: true, notice_period_to_terminate_renewal: 6 months, total_contract_value: 20000000})","(:Clause {excerpts: [], draft_p25_delta: [], obligor: Each Party, title: Marketing & Promotion, external_inference_used: false, clause_order: 6, right_holder: Each Party, confidence_overall: 0.0, dependencies: [], agreement_id: LOAN AGREEMENT, clause_id: 10, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: Loan Agreement})",[],[]
+"(:Agreement {agreement_id: SECOND AMENDED AND RESTATED MASTER SERVICES AGREEMENT, agreement_date: 2024-04-30, contract_currency: USD, name: SECOND AMENDED AND RESTATED MASTER SERVICES AGREEMENT, effective_date: 2025-01-01, type: Master Services Agreement, auto_renewal: false, total_contract_value: 22600000})","(:Clause {excerpts: [The Service Recipients hereby agree that no Manager Indemnified Party will be liable to a Service Recipient, a Service Recipient’s Governing Body (including, for greater certainty, a director or officer of a Service Recipient or another individual with similar function or capacity) or any security holder or partner of a Service Recipient for any Liabilities that may occur as a result of any acts or omissions by any Manager Indemnified Party pursuant to or in accordance with this Agreement, except to the extent that such Liabilities are finally determined by a final and non-appealable judgment entered by a court of competent jurisdiction to have resulted from a Manager Indemnified Party’s bad faith, fraud, willful misconduct or gross negligence, or in the case of a criminal matter, conduct undertaken with knowledge that the conduct was unlawful.], draft_p25_delta: [], obligor: Service Recipients, title: Limitation of Liability, external_inference_used: false, clause_order: 2, right_holder: Manager Indemnified Party, confidence_overall: 0.0, dependencies: [], agreement_id: SECOND AMENDED AND RESTATED MASTER SERVICES AGREEMENT, clause_id: 9, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: 003120-0001-26804205})","[
+  {
+    identity: 133,
+    labels: [Variable],
+    properties: {
+      unit: USD,
+      evidence: The maximum amount of the aggregate liability of the Manager Indemnified Parties pursuant to this Agreement will be equal to the amounts previously payable in respect of Services pursuant to this Agreement in the two most recent calendar years by the Service Recipients pursuant to Article 7.,
+      clause_key: SECOND AMENDED AND RESTATED MASTER SERVICES AGREEMENT:::9,
+      confidence: 1.0,
+      name: liability_cap_amount,
+      type: int,
+      value: 45320000
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:133
+  },
+  {
+    identity: 134,
+    labels: [Variable],
+    properties: {
+      evidence: The maximum amount of the aggregate liability of the Manager Indemnified Parties pursuant to this Agreement will be equal to the amounts previously payable in respect of Services pursuant to this Agreement in the two most recent calendar years by the Service Recipients pursuant to Article 7.,
+      clause_key: SECOND AMENDED AND RESTATED MASTER SERVICES AGREEMENT:::9,
+      confidence: 1.0,
+      name: liability_cap_type,
+      type: enum,
+      value: aggregate
+    },
+    elementId: 4:f598c936-3633-4b74-ab5d-07e99aea41f5:134
+  }
+]",[]
+"(:Agreement {agreement_id: SECOND AMENDED AND RESTATED MASTER SERVICES AGREEMENT, agreement_date: 2024-04-30, contract_currency: USD, name: SECOND AMENDED AND RESTATED MASTER SERVICES AGREEMENT, effective_date: 2025-01-01, type: Master Services Agreement, auto_renewal: false, total_contract_value: 22600000})","(:Clause {excerpts: [This Agreement shall continue in full force and effect in perpetuity until terminated in accordance with Section 10.2, Section 10.3 or Section 12.1.1.], draft_p25_delta: [], obligor: CWEN, CE LLC and CE Op, title: Term and Termination, external_inference_used: false, clause_order: 3, right_holder: Each Party, confidence_overall: 0.0, dependencies: [], agreement_id: SECOND AMENDED AND RESTATED MASTER SERVICES AGREEMENT, clause_id: 10, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: 003120-0001-26804205})",[],[]
+"(:Agreement {agreement_id: SECOND AMENDED AND RESTATED MASTER SERVICES AGREEMENT, agreement_date: 2024-04-30, contract_currency: USD, name: SECOND AMENDED AND RESTATED MASTER SERVICES AGREEMENT, effective_date: 2025-01-01, type: Master Services Agreement, auto_renewal: false, total_contract_value: 22600000})","(:Clause {excerpts: [Any Dispute shall be submitted to arbitration (the “Arbitration”) by three (3) Arbitrators pursuant to the procedure set forth in this Section 11.2 and pursuant to the then current Commercial Arbitration Rules (the “Rules”) of the American Arbitration Association (“AAA”).], draft_p25_delta: [], obligor: Each Party, title: Arbitration, external_inference_used: false, clause_order: 4, right_holder: Each Party, confidence_overall: 0.0, dependencies: [], agreement_id: SECOND AMENDED AND RESTATED MASTER SERVICES AGREEMENT, clause_id: 11, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: 003120-0001-26804205})",[],[]
+"(:Agreement {agreement_id: SECOND AMENDED AND RESTATED MASTER SERVICES AGREEMENT, agreement_date: 2024-04-30, contract_currency: USD, name: SECOND AMENDED AND RESTATED MASTER SERVICES AGREEMENT, effective_date: 2025-01-01, type: Master Services Agreement, auto_renewal: false, total_contract_value: 22600000})","(:Clause {excerpts: [Manager agrees that the information the Manager Group has or obtains concerning the Service Recipients and their respective assets, business, operations or prospects (the “Confidential Information”) constitutes the confidential information of the respective Service Recipient, and that Manager shall not, and shall cause the other members of the Manager Group not to, without the prior written consent of CWEN, publicly disclose any Confidential Information.], draft_p25_delta: [], obligor: Manager, title: Confidentiality, external_inference_used: false, clause_order: 5, right_holder: Each Party, confidence_overall: 0.0, dependencies: [], agreement_id: SECOND AMENDED AND RESTATED MASTER SERVICES AGREEMENT, clause_id: 6, defaults_applied: [], draft_p75_delta: [], page_refs: [], source_document_id: 003120-0001-26804205})",[],[]

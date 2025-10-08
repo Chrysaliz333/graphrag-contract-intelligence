@@ -1,0 +1,210 @@
+{
+  "agreement": {
+    "agreement_name": "Master Services Agreement",
+    "agreement_type": "Master Service Agreement",
+    "agreement_date": "2021-09-01",
+    "effective_date": "2021-09-01",
+    "expiration_date": "2023-08-31",
+    "renewal_term": "two additional one (1) year terms",
+    "notice_period_to_terminate_renewal": "null",
+    "auto_renewal": false,
+    "total_contract_value": null,
+    "parties": [
+      {
+        "role": "Buyer",
+        "name": "The Texas A&M University System",
+        "incorporation_country": null,
+        "incorporation_state": null
+      },
+      {
+        "role": "Vendor",
+        "name": "BARD Research Design Consultants",
+        "incorporation_country": null,
+        "incorporation_state": null
+      }
+    ],
+    "governing_law": {
+      "country": "United States",
+      "state": "Texas",
+      "most_favored_country": null
+    },
+    "dispute_resolution": {
+      "method": "negotiation",
+      "venue": "Brazos County, Texas",
+      "jurisdiction": "Texas",
+      "governing_rules": "Chapter 2260, Texas Government Code"
+    }
+  },
+  "clauses": [
+    {
+      "clause_id": 4,
+      "title": "Termination for Cause",
+      "right_holder": "A&M System",
+      "obligor": "Provider",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "In the event of substantial failure by Provider to perform in accordance with the terms hereof, A&M System may terminate this MSA upon fifteen (15) days written notice of termination setting forth the nature of the failure (the termination shall not be effective if the failure is fully cured prior by the end of the fifteen-day period), provided that said failure is through no fault of A&M System."
+      ],
+      "provenance": {
+        "source_document_id": "contract_001",
+        "page_refs": [
+          1
+        ]
+      },
+      "confidence_overall": 1.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 5,
+      "title": "Termination for Convenience",
+      "right_holder": "A&M System",
+      "obligor": "Provider",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "A&M System may terminate this MSA at any time upon thirty (30) days prior notice to Provider."
+      ],
+      "provenance": {
+        "source_document_id": "contract_001",
+        "page_refs": [
+          1
+        ]
+      },
+      "confidence_overall": 1.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 6,
+      "title": "Confidentiality",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [],
+      "provenance": {
+        "source_document_id": "contract_001",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 7,
+      "title": "Data Breach Notification",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [],
+      "provenance": {
+        "source_document_id": "contract_001",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 8,
+      "title": "Data Protection Compliance",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [],
+      "provenance": {
+        "source_document_id": "contract_001",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 9,
+      "title": "Technical & Organisational Measures",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [],
+      "provenance": {
+        "source_document_id": "contract_001",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 10,
+      "title": "Marketing & Promotion",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [],
+      "provenance": {
+        "source_document_id": "contract_001",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    }
+  ],
+  "file_name": "C2022-4757.pdf"
+}

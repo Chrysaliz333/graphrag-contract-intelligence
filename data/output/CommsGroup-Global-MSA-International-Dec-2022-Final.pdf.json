@@ -1,0 +1,101 @@
+{
+  "agreement": {
+    "agreement_name": "MASTER SERVICES AGREEMENT",
+    "agreement_type": "Master Service Agreement",
+    "agreement_date": null,
+    "effective_date": null,
+    "expiration_date": null,
+    "renewal_term": null,
+    "notice_period_to_terminate_renewal": null,
+    "auto_renewal": false,
+    "total_contract_value": null,
+    "parties": [
+      {
+        "role": "Vendor",
+        "name": "Comms Group (International) Pte Ltd",
+        "incorporation_country": null,
+        "incorporation_state": null
+      },
+      {
+        "role": "Customer",
+        "name": null,
+        "incorporation_country": null,
+        "incorporation_state": null
+      }
+    ],
+    "governing_law": {
+      "country": "Singapore",
+      "state": null,
+      "most_favored_country": null
+    },
+    "dispute_resolution": {
+      "method": "negotiation",
+      "venue": null,
+      "jurisdiction": "Singapore",
+      "governing_rules": null
+    }
+  },
+  "clauses": [
+    {
+      "clause_id": 14,
+      "title": "Confidentiality",
+      "right_holder": "Each Party",
+      "obligor": "Each Party",
+      "variables": [
+        {
+          "name": "ci_return_sla_bd",
+          "type": "int",
+          "value": null,
+          "unit": "n/a",
+          "evidence": "You must return the Confidential Information and all copies of it to us.",
+          "confidence": 0.0
+        }
+      ],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": "You must return the Confidential Information and all copies of it to us.",
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "You may use our Confidential Information only for the purposes of this agreement; and must keep confidential all Confidential Information except for disclosures permitted under this clause 14; and to the extent (if any) you are required to disclose any Confidential Information by Law or in accordance with the rules of an applicable stock exchange.",
+        "On the termination of this Agreement for any reason, you must return the Confidential Information and all copies of it to us."
+      ],
+      "provenance": {
+        "source_document_id": "Comms Group Global MSA V1.0 December 2022",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    },
+    {
+      "clause_id": 21,
+      "title": "Indemnity",
+      "right_holder": "Comms Group",
+      "obligor": "Customer",
+      "variables": [],
+      "drafts": {
+        "p0_full": null,
+        "p25_delta": [],
+        "p50_full": null,
+        "p75_delta": [],
+        "p100_full": null
+      },
+      "dependencies": [],
+      "excerpts": [
+        "You indemnify and will keep us and our Affiliates indemnified against any loss, cost, expense, damage or other liability (including legal costs on a solicitor/client basis) (Loss) arising out of: your breach of this Agreement; any claim or demand against us (including for negligence) by any person other than you, which arises from or is connected with your use of the Services or Equipment."
+      ],
+      "provenance": {
+        "source_document_id": "Comms Group Global MSA V1.0 December 2022",
+        "page_refs": []
+      },
+      "confidence_overall": 0.0,
+      "defaults_applied": [],
+      "external_inference_used": false
+    }
+  ],
+  "file_name": "CommsGroup-Global-MSA-International-Dec-2022-Final.pdf"
+}
