@@ -456,11 +456,15 @@ class ContractSearchServiceEnhanced:
             if party is None:
                 continue
 
+            country_node = country_nodes[i] if country_nodes and i < len(country_nodes) else None
+            incorporation_country = country_node.get('name') if country_node is not None else ''
+            incorporation_state = country_node.get('state') if country_node is not None else ''
+
             p: Party = {
                 'name': party.get('name'),
                 'role': 'Unknown',  # Would need to get from relationship
-                'incorporation_country': country_nodes[i].get('name') if i < len(country_nodes) else '',
-                'incorporation_state': ''  # Would need to get from relationship
+                'incorporation_country': incorporation_country,
+                'incorporation_state': incorporation_state,
             }
             parties.append(p)
 

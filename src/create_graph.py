@@ -7,6 +7,7 @@ compliance frameworks, and all fields from enhanced schema.
 from neo4j import GraphDatabase
 import json
 import os
+from pathlib import Path
 
 
 CREATE_ENHANCED_GRAPH_STATEMENT = """
@@ -417,43 +418,57 @@ def main():
     NEO4J_USER = os.getenv('NEO4J_USERNAME', 'neo4j')
     NEO4J_PASSWORD = os.getenv('NEO4J_PASSWORD')
     OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-    JSON_CONTRACT_FOLDER = './data/output/'
+    JSON_CONTRACT_FOLDER = Path(os.getenv('EXTRACT_OUTPUT_DIR', './data/output/'))
 
-    if not os.path.exists(JSON_CONTRACT_FOLDER):
+    if not JSON_CONTRACT_FOLDER.exists():
         print(f"Creating output directory: {JSON_CONTRACT_FOLDER}")
-        os.makedirs(JSON_CONTRACT_FOLDER)
+        JSON_CONTRACT_FOLDER.mkdir(parents=True, exist_ok=True)
 
     driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
 
-    json_contracts = [filename for filename in os.listdir(JSON_CONTRACT_FOLDER) if filename.endswith('.json')]
+    json_contracts = sorted(JSON_CONTRACT_FOLDER.glob('*.json'))
 
     if not json_contracts:
         print(f"No JSON files found in {JSON_CONTRACT_FOLDER}")
         print("Please run the enhanced extraction script first.")
         return
 
-    contract_id = 1
-    for json_contract in json_contracts:
-        print(f"Processing {json_contract}...")
-        with open(JSON_CONTRACT_FOLDER + json_contract, 'r') as file:
-            json_string = file.read()
-            json_data = json.loads(json_string)
-            agreement = json_data['agreement']
-            agreement['contract_id'] = contract_id
-            driver.execute_query(CREATE_ENHANCED_GRAPH_STATEMENT, data=json_data)
-            contract_id += 1
+    for json_path in json_contracts:
+        print(f"Processing {json_path.name}...")
+        with open(json_path, 'r', encoding='utf-8') as file:
+            json_data = json.load(file)
+
+        agreement = json_data.get('agreement', {})
+        contract_id = (
+            json_data.get('contract_id')
+            or agreement.get('contract_id')
+            or json_data.get('file_name')
+            or json_path.stem
+        )
+
+        if not contract_id:
+            raise ValueError(f"Unable to determine contract_id for {json_path}")
+
+        json_data['contract_id'] = contract_id
+        agreement['contract_id'] = contract_id
+        json_data['agreement'] = agreement
+
+        driver.execute_query(CREATE_ENHANCED_GRAPH_STATEMENT, data=json_data)
 
     print("\nCreating indices...")
     create_full_text_indices(driver)
     driver.execute_query(CREATE_VECTOR_INDEX_STATEMENT)
 
-    print("\nGenerating embeddings for contract excerpts...")
-    # Process in batches to avoid timeout
-    while True:
-        result = driver.execute_query(EMBEDDINGS_STATEMENT, token=OPENAI_API_KEY)
-        if result.summary.counters.properties_set == 0:
-            break
-        print(f"  Processed batch of embeddings...")
+    if OPENAI_API_KEY:
+        print("\nGenerating embeddings for contract excerpts...")
+        # Process in batches to avoid timeout
+        while True:
+            result = driver.execute_query(EMBEDDINGS_STATEMENT, token=OPENAI_API_KEY)
+            if result.summary.counters.properties_set == 0:
+                break
+            print("  Processed batch of embeddings...")
+    else:
+        print("\nSkipping excerpt embeddings: OPENAI_API_KEY not configured.")
 
     print("\n✅ Enhanced graph creation complete!")
     driver.close()

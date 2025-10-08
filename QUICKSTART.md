@@ -35,6 +35,9 @@ This will:
 - Extract 60+ data points per contract
 - Save JSON to `data/output/`
 - Save debug info to `data/debug/`
+- Emit a stable `contract_id` for every agreement (sourced from the JSON payload or the PDF filename)
+
+> ℹ️  Large documents: the extractor enforces a character budget (~120k by default) to stay within the model's context window. Set `EXTRACT_MAX_CHARS` in your `.env` if you need to tune the limit.
 
 ### 4. Create Knowledge Graph (1 min)
 

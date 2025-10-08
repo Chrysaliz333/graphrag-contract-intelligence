@@ -61,6 +61,7 @@ client = OpenAI(
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 PROMPTS_DIR = ROOT_DIR / "prompts"
+DEFAULT_MAX_CONTRACT_CHARS = 120_000
 
 
 def resolve_path(env_key: str, default_path: Path) -> Path:
@@ -122,6 +123,21 @@ def load_contract_text(pdf_path: Path) -> str:
     if not contract_text:
         raise ValueError(f"No extractable text found in {pdf_path}")
     return contract_text
+
+
+def enforce_length_budget(contract_text: str, source_name: str) -> None:
+    """Abort early if the contract exceeds the configured character budget."""
+    max_chars_env = os.getenv("EXTRACT_MAX_CHARS")
+    try:
+        max_chars = int(max_chars_env) if max_chars_env else DEFAULT_MAX_CONTRACT_CHARS
+    except ValueError:
+        max_chars = DEFAULT_MAX_CONTRACT_CHARS
+
+    if len(contract_text) > max_chars:
+        raise ValueError(
+            f"Contract '{source_name}' is {len(contract_text):,} characters, exceeding the limit of "
+            f"{max_chars:,}. Split the document or raise EXTRACT_MAX_CHARS cautiously."
+        )
 
 
 def call_responses_api(contract_text: str, extraction_prompt: str, system_instruction: Optional[str] = None) -> str:
@@ -206,6 +222,15 @@ def normalize_contract_json(raw: Dict[str, Any], source_name: str) -> Dict[str, 
 
     # Record filename for downstream IDs.
     data.setdefault("file_name", source_name)
+
+    # Ensure a stable contract identifier flows downstream.
+    contract_id = (
+        data.get("contract_id")
+        or agreement.get("contract_id")
+        or Path(source_name).stem
+    )
+    data["contract_id"] = contract_id
+    agreement.setdefault("contract_id", contract_id)
 
     return data
 
@@ -312,6 +337,7 @@ def main(
 
         try:
             contract_text = load_contract_text(pdf_path)
+            enforce_length_budget(contract_text, pdf_path.name)
             complete_response = call_responses_api(contract_text, extraction_prompt, system_instruction)
 
             debug_file = debug_folder / f"complete_response_{pdf_path.name}.json"
