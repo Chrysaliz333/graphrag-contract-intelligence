@@ -59,6 +59,8 @@ client = OpenAI(
     max_retries=3,
 )
 
+SUPPORTS_RESPONSE_FORMAT = True
+
 ROOT_DIR = Path(__file__).resolve().parent.parent
 PROMPTS_DIR = ROOT_DIR / "prompts"
 DEFAULT_MAX_CONTRACT_CHARS = 120_000
@@ -142,6 +144,7 @@ def enforce_length_budget(contract_text: str, source_name: str) -> None:
 
 def call_responses_api(contract_text: str, extraction_prompt: str, system_instruction: Optional[str] = None) -> str:
     """Call the OpenAI Responses API with basic retry logic."""
+    global SUPPORTS_RESPONSE_FORMAT  # noqa: PLW0603
     messages: List[Dict[str, str]] = []
     if system_instruction:
         messages.append({"role": "system", "content": system_instruction})
@@ -156,14 +159,25 @@ def call_responses_api(contract_text: str, extraction_prompt: str, system_instru
     last_error: Optional[Exception] = None
     for attempt in range(1, 4):
         try:
+            kwargs: Dict[str, Any] = {}
+            if SUPPORTS_RESPONSE_FORMAT:
+                kwargs["response_format"] = {"type": "json_object"}
+
             resp = client.responses.create(
                 model=os.getenv("EXTRACT_MODEL", "gpt-4o-mini"),
                 input=messages,
                 temperature=0,
                 max_output_tokens=20000,
-                response_format={"type": "json_object"},
+                **kwargs,
             )
             return resp.output_text
+        except TypeError as exc:
+            if SUPPORTS_RESPONSE_FORMAT and "response_format" in str(exc):
+                print("  ⚠ OpenAI client does not support response_format; falling back to prompt-enforced JSON.")
+                globals()["SUPPORTS_RESPONSE_FORMAT"] = False
+                continue
+            last_error = exc
+            break
         except Exception as exc:  # pylint: disable=broad-except
             last_error = exc
             if attempt == 3:
